@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/activity_sign_up.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/fragment_home.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/item_challenge.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/item_challenge.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/activity_home.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/fragment_sign_up.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/fragment_sign_up.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/activity_onboard.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/activity_onboard.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/activity_sign_in.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/fragment_details.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/fragment_details.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/fragment_onboard.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/fragment_onboard.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-mergeDebugResources-48:/layout/fragment_sign_in.xml",
+        "source": "com.willpower.tracker.app-main-51:/layout/fragment_sign_in.xml"
+    }
+]

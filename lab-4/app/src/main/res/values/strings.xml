@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WillPower Tracker</string>
+    
+    <!-- Onboard -->
+    <string name="onboard_title">Сила воли</string>
+    <string name="onboard_subtitle">Трекер привычек с научной базой</string>
+    <string name="onboard_description">Основано на методике Kelly McGonigal.\nПобедите прокрастинацию и развивайте силу воли через ежедневные челленджи.</string>
+    <string name="btn_get_started">Начать</string>
+    
+    <!-- SignIn -->
+    <string name="sign_in_title">Вход</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="btn_sign_in">Войти</string>
+    <string name="btn_sign_up">Регистрация</string>
+    <string name="no_account">Нет аккаунта?</string>
+    
+    <!-- SignUp -->
+    <string name="sign_up_title">Регистрация</string>
+    <string name="name_hint">Имя</string>
+    <string name="confirm_password_hint">Подтвердите пароль</string>
+    <string name="age_hint">Возраст</string>
+    <string name="gender_hint">Пол</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="already_have_account">Уже есть аккаунт?</string>
+    
+    <!-- Home -->
+    <string name="home_title">Мои челленджи</string>
+    <string name="welcome_message">Добро пожаловать!</string>
+    <string name="daily_quote">Цитата дня</string>
+    
+    <!-- Validation -->
+    <string name="error_empty_field">Поле не может быть пустым</string>
+    <string name="error_invalid_email">Неверный формат email</string>
+    <string name="error_password_short">Пароль должен быть минимум 6 символов</string>
+    <string name="error_passwords_not_match">Пароли не совпадают</string>
+    
+    <!-- Gender options -->
+    <string name="gender_male">Мужской</string>
+    <string name="gender_female">Женский</string>
+    <string name="gender_other">Другой</string>
+</resources>

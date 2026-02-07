@@ -1,0 +1,23 @@
+# IDE
+.idea/
+*.iml
+
+# Build
+*.apk
+*.aab
+*.ap_
+build/
+.gradle/
+local.properties
+
+# Claude Code (local settings only)
+.claude/settings.local.json
+.claude/cache/
+
+# Agent system (cache/temp)
+.agent/.cache/
+.agent/*.log
+
+# OS
+.DS_Store
+Thumbs.db

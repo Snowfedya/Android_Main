@@ -6,8 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a multi-lab **Android development learning environment** with an integrated **AI agent orchestration system** called "Antigravity Kit".
 
-- **Android Labs (lab-1 through lab-7):** Kotlin-based Android projects (WillPowerTracker - habit/challenge tracking app)
+- **Android Labs (lab-1 through lab-7):** Kotlin-based Android projects representing **progressive states** of the WillPowerTracker app (habit/challenge tracking with AI mentor)
 - **AI Agent System (.agent/):** Modular framework with 20 specialist agents and 36 domain skills for development assistance
+
+**WillPower Tracker** - An app for fighting procrastination with:
+- Habit/challenge tracking based on "The Willpower Instinct" methodology (Kelly McGonigal)
+- AI mentor (glm-4.7-flash) that generates motivational quotes and progress analysis
+- Focus sessions with timer + fullscreen mode
+- Completion history and weekly reports (.txt export + backup/restore)
+
+**📖 Detailed lab specifications:** See [LABS.md](LABS.md) for complete technical requirements for each lab.
 
 ---
 
@@ -30,12 +38,14 @@ Navigate to any lab directory (`lab-1/`, `lab-2/`, etc.) to run these commands:
 ./gradlew installDebug       # Install to connected device
 ```
 
-**Build Configuration:**
+> **Note:** Each lab is a standalone project. Commands are executed within the specific lab directory. See [LABS.md](LABS.md) for lab-specific functionality and requirements.
+
+**Build Configuration (base):**
 - **Language:** Kotlin 2.2.10
 - **Compile SDK:** 34
 - **Min SDK:** 24
 - **Namespace:** `com.willpower.tracker`
-- **Dependencies:** AndroidX, Material Design, RecyclerView
+- **Dependencies:** AndroidX, Material Design, RecyclerView (each lab adds more)
 
 ---
 
@@ -58,27 +68,64 @@ python .agent/skills/mobile-design/scripts/mobile_audit.py <project_path>
 
 ---
 
+## Lab Progression Model
+
+**Each lab represents a complete, working state** of the WillPowerTracker app. Every subsequent lab builds upon the previous one, introducing new Android development concepts and features.
+
+| Lab | Focus | Key Additions | Architecture |
+|-----|-------|---------------|--------------|
+| **1** | UI (Activities) | 4 Activities, RecyclerView, basic navigation | Activity-based |
+| **2** | Lifecycle | BaseActivity, lifecycle logging, Intent/Parcelable | Activity-based + lifecycle |
+| **3** | Fragments | Single Activity, 4 Fragments, FragmentManager | Fragment-based |
+| **4** | Navigation + ViewBinding | NavController, Safe Args, DetailsFragment | Fragment + Navigation Component |
+| **5** | Networking | Retrofit, AI API (glm-4.7-flash), error handling | Fragment + Network |
+| **6** | Storage + Focus Mode | DataStore, file I/O, fullscreen timer, reports | Fragment + Network + Storage |
+| **7** | Database + MVVM | Room, Flow, Repository, SSOT, Paging | MVVM + Room + Full stack |
+
+**User Flow (final state):** Onboard → SignIn → Home → Details → Settings
+
+**Domain Entities:**
+- `Task/Challenge` - habits with techniques, duration, difficulty
+- `Completion` - execution history with timer results
+- `AiAdvice` - AI-generated motivational quotes/tips
+- `User` - (educational) local authentication
+
+**📖 See [LABS.md](LABS.md) for detailed technical specifications, acceptance criteria, and demo requirements for each lab.**
+
+---
+
 ## High-Level Architecture
 
 ### Android Application Structure
 
-Each lab follows the standard Android project structure:
+Each lab follows the standard Android project structure with evolution across labs:
 
 ```
 lab-N/
 ├── app/
 │   └── src/main/
 │       ├── java/com/willpower/tracker/
-│       │   ├── activities/      # UI activities (OnboardActivity, SignInActivity, etc.)
+│       │   ├── activities/      # Lab 1-2: UI activities
+│       │   ├── fragments/       # Lab 3-7: Fragments (single Activity)
 │       │   ├── adapters/        # RecyclerView adapters
-│       │   └── models/          # Data models (Challenge data class)
+│       │   ├── models/          # Data models (Challenge, User, etc.)
+│       │   ├── network/         # Lab 5-7: Retrofit + API models
+│       │   ├── storage/         # Lab 6-7: DataStore, BackupManager
+│       │   ├── database/        # Lab 7: Room entities + DAOs
+│       │   ├── viewmodel/       # Lab 7: ViewModels (MVVM)
+│       │   └── repository/      # Lab 5-7: Repository pattern
 │       ├── res/                 # Android resources (layouts, drawables, colors, strings)
+│       ├── navigation/          # Lab 4-7: Navigation graph
 │       └── AndroidManifest.xml
-├── build.gradle.kts            # App-level build configuration
+├── build.gradle.kts            # App-level build configuration (evolves per lab)
 └── settings.gradle.kts         # Project settings
 ```
 
-**Pattern:** Activity-based with MVVM-lite. OnboardActivity is the launcher activity.
+**Architecture Evolution:**
+- **Labs 1-2:** Activity-based with Intent navigation
+- **Lab 3:** Fragment-based with FragmentManager
+- **Labs 4-7:** Fragment-based with Navigation Component
+- **Lab 7:** MVVM with Room + Flow + Repository
 
 ### Antigravity Kit Architecture
 
@@ -107,6 +154,7 @@ User Request → Agent Selection → Skill Loading → Execution
 
 ## Key Files to Understand
 
+- **[LABS.md](LABS.md)** - Complete technical specifications for all 7 labs (requirements, acceptance criteria, demo requirements)
 - **`.agent/ARCHITECTURE.md`** - Complete Antigravity Kit system documentation
 - **`.agent/rules/GEMINI.md`** - Global AI behavior rules and protocols (agent routing, Socratic gate, clean code standards)
 - **`.agent/skills/mobile-design/SKILL.md`** - Mobile UI/UX patterns and best practices

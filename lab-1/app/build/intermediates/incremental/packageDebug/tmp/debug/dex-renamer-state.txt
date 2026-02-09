@@ -1,16 +1,16 @@
-#Sat Feb 07 15:02:37 MSK 2026
-base.0=/home/snow/Projects/Replit/lab-1/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/snow/Projects/Replit/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/home/snow/Projects/Replit/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.3=/home/snow/Projects/Replit/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.4=/home/snow/Projects/Replit/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
-path.0=classes.dex
-path.1=0/classes.dex
-path.2=11/classes.dex
-path.3=15/classes.dex
+#Mon Feb 09 23:27:26 MSK 2026
 path.4=5/classes.dex
-renamed.0=classes.dex
-renamed.1=classes2.dex
-renamed.2=classes3.dex
+path.3=15/classes.dex
+path.2=11/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.4=/home/snow/Projects/Android_Main/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.3=/home/snow/Projects/Android_Main/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.2=/home/snow/Projects/Android_Main/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.1=/home/snow/Projects/Android_Main/lab-1/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.0=/home/snow/Projects/Android_Main/lab-1/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
 renamed.4=classes5.dex

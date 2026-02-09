@@ -17,12 +17,12 @@ public final class ActivityMainBinding implements ViewBinding {
   private final FragmentContainerView rootView;
 
   @NonNull
-  public final FragmentContainerView fragmentContainer;
+  public final FragmentContainerView navHostFragment;
 
   private ActivityMainBinding(@NonNull FragmentContainerView rootView,
-      @NonNull FragmentContainerView fragmentContainer) {
+      @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
-    this.fragmentContainer = fragmentContainer;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
@@ -52,8 +52,8 @@ public final class ActivityMainBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    FragmentContainerView fragmentContainer = (FragmentContainerView) rootView;
+    FragmentContainerView navHostFragment = (FragmentContainerView) rootView;
 
-    return new ActivityMainBinding((FragmentContainerView) rootView, fragmentContainer);
+    return new ActivityMainBinding((FragmentContainerView) rootView, navHostFragment);
   }
 }

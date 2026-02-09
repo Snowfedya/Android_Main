@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color error_red
 color md_theme_background
 color md_theme_error
 color md_theme_errorContainer
@@ -28,6 +29,8 @@ color success_green
 color warning_orange
 drawable bg_card
 drawable bg_gradient
+drawable ic_launcher_background
+drawable ic_launcher_foreground
 drawable ic_willpower
 id action_home_to_details
 id action_onboard_to_signIn
@@ -54,9 +57,9 @@ id etEmail
 id etName
 id etPassword
 id fabAdd
-id fragmentContainer
 id homeFragment
 id ivLogo
+id navHostFragment
 id nav_graph
 id onboardFragment
 id rvChallenges
@@ -91,6 +94,8 @@ layout fragment_onboard
 layout fragment_sign_in
 layout fragment_sign_up
 layout item_challenge
+mipmap ic_launcher
+mipmap ic_launcher_round
 navigation nav_graph
 string age_hint
 string already_have_account

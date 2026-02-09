@@ -1,11 +1,15 @@
 [
     {
+        "merged": "com.willpower.tracker.app-debug-49:/layout_item_challenge.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/layout/item_challenge.xml"
+    },
+    {
         "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_details.xml.flat",
         "source": "com.willpower.tracker.app-main-51:/layout/fragment_details.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_item_challenge.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/item_challenge.xml"
+        "merged": "com.willpower.tracker.app-debug-49:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "com.willpower.tracker.app-debug-49:/layout_activity_sign_up.xml.flat",
@@ -36,6 +40,10 @@
         "source": "com.willpower.tracker.app-main-51:/layout/activity_onboard.xml"
     },
     {
+        "merged": "com.willpower.tracker.app-debug-49:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/drawable/ic_launcher_foreground.xml"
+    },
+    {
         "merged": "com.willpower.tracker.app-debug-49:/layout_activity_sign_in.xml.flat",
         "source": "com.willpower.tracker.app-main-51:/layout/activity_sign_in.xml"
     },
@@ -48,8 +56,20 @@
         "source": "com.willpower.tracker.app-main-51:/layout/fragment_sign_up.xml"
     },
     {
+        "merged": "com.willpower.tracker.app-debug-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-debug-49:/navigation_nav_graph.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/navigation/nav_graph.xml"
+    },
+    {
         "merged": "com.willpower.tracker.app-debug-49:/layout_activity_main.xml.flat",
         "source": "com.willpower.tracker.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-debug-49:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.willpower.tracker.app-main-51:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.willpower.tracker.app-debug-49:/layout_activity_home.xml.flat",

@@ -1,313 +1,313 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
-MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/9.1.0/transforms/3aad8cfea32ecab51577650e79aa6906/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/9.1.0/transforms/8830d46d4b892a087f9d87b5542a0749/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/57ba3c2df2d786973a3ae6c600df3ebd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/594d66b73263008b3da2de992cf27a55/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/9.1.0/transforms/595d14b83d425d2e738e60c417b8bee3/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/9.1.0/transforms/f2edd8288020a75d638d0019424964d2/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/9e51a9017603f2d3ea0e3139b749eaf1/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/9.1.0/transforms/4d66e916595a5d4388ef1e4f59cd0fc1/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/9.1.0/transforms/fa0747ee2ef57595715c7ad0ca85a987/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/9a84bc6a3f4ee4fa36be10ec3956c0bd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c43768e6549cca9802d784dc8e3c7b98/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/0827c4c9387d439ec623ff1b5ce77b63/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/15bc55e4af046a7e854209dc68660354/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/0a93cdfe14cd8cc65390133ec3bb5a04/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/10b672f8d61ead817d5746e2f1cf7a31/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/ef61f77786f9a1e5b26c4fce785b7bb7/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/f078f49a6c6555aedc75a974dffa92e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8c58b3a1b3d91be82d419eb784b77564/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c0eb04d892a21638d3262218819d1ae8/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7e5d5020614ee5bf298ead00253f26eb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/9.1.0/transforms/7a222ab7f12d4ed23c8a76f41db12347/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/129c292d65a3806d636629102d7aba46/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/aabd3bcaf59a21a54893fce2c34eecfa/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14b0fbb8c37c282e9679da02f9dfd262/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14277bda3bc9fd1380e3500b58cd93cd/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/0b1d309bb0af08ddafcf5f51cd3f9070/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/a69e19775dd6ff37c27c0e5d16445adc/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/9c29b1d91c7cd2e66e207e2605825637/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/4b35241d29e84189f71a8f5aaa80dedf/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/25f5d8b753e40054af8ac34e9479d156/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7182905c94698ffe18832cd7ca57c2d8/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/d95db00f08a1cbb0eeadb2ca59de9da3/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/50531204c41d1ecf2c170c75daac96f3/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/9.1.0/transforms/f7302746f3d42d4303c9e315b1e509f7/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8b684244fad93985f8c4a3e2c271a4fd/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/93a0f5e21d82bcae9929ee521e2ee639/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7a8afeae32630d0e4e5933b0dd321b40/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/a377907f8f576c7151cae9cce55d5e1b/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/0f250d57f3a86cbc2736b0f726228b4c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/583d4500ab24c03c1ce78f7a37791e80/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/8.9/transforms/4d4e40293a2b711328a359b641021902/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/8.9/transforms/d3a49b58f0bbdd11c270366a1243fecd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/8.9/transforms/4b86f74b848649b83425a316bd1aeda8/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/8.9/transforms/547f121956d7476b7c524b0164a8659b/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/8.9/transforms/d4e164239e3b9654b5d70175b6b9e88d/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/8.9/transforms/396ab63016ea73734a7f77e00d91a02c/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/8.9/transforms/e0a0db477da5c0c3a680adb437df85f3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/8.9/transforms/c7702d770de6a0e30c50ea4ac915031d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/8.9/transforms/1a35759641171b20c8448877648cc6c9/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/8.9/transforms/96c8256d1f4c76007320a66996cc4de3/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/8.9/transforms/aeb5dc1fa50d7fd5ad4b24e5ffb01195/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/8.9/transforms/a11e986323428b19667708acf20f853e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/82e3b852c4cbbdbebdd3a7d52b466112/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/8.9/transforms/da9c799369b36df73fe3ee3dfbf8f8db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/8.9/transforms/4ba124cf825ccf2a69b2642e44b0efd7/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/8.9/transforms/7b809c96a29fbfb7de11b3a57f0331c8/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/8.9/transforms/c86c174e756db69cdf0b5a228647b9fa/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/8.9/transforms/6f57d445dc2b7b17599cecc7d5b53684/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/8.9/transforms/a6546657e2b8b9f71085502887ea3702/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fc38ae2e076beec4e5fbb25f6285f648/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/8.9/transforms/5e75aa8d90c06de4b1d703ccf1355540/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fdf357a77723c656e49e1542c28041fa/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2a999706caa3e6891b0d3a5b9a41a974/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/8.9/transforms/cae77d92feda4a12e954061c8c184ac6/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/8.9/transforms/c6b4264a4c6484347f00641f1b593f22/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/8.9/transforms/2213357bcfe1cccd41a7e138e013c8cb/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/8.9/transforms/a92079a35573fb6362848d88369ef5c8/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/8.9/transforms/0195a668f2992e0f000aa651e7545f49/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fd3c08c754db485d3bfa1322bd107a61/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/18363e5a107bdc05eb84c99f0dc0db62/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/7de4202b32b7b584b96361a782a8aa12/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/8.9/transforms/6e26e8e53633c31a939db207f194c34a/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/b5711da55469adf92f3573f0c25a1f41/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/8.9/transforms/28b00d3ab4088bd23d0358fc954c864c/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:5:5-36:19
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:5:5-36:19
-MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/9.1.0/transforms/3aad8cfea32ecab51577650e79aa6906/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/9.1.0/transforms/3aad8cfea32ecab51577650e79aa6906/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/9.1.0/transforms/8830d46d4b892a087f9d87b5542a0749/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/9.1.0/transforms/8830d46d4b892a087f9d87b5542a0749/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/d95db00f08a1cbb0eeadb2ca59de9da3/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/d95db00f08a1cbb0eeadb2ca59de9da3/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:5:5-36:19
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:5:5-36:19
+MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/a377907f8f576c7151cae9cce55d5e1b/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/a377907f8f576c7151cae9cce55d5e1b/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/0f250d57f3a86cbc2736b0f726228b4c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/0f250d57f3a86cbc2736b0f726228b4c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fd3c08c754db485d3bfa1322bd107a61/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fd3c08c754db485d3bfa1322bd107a61/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:9:9-54
 	tools:targetApi
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:12:9-29
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:12:9-29
 	android:icon
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:11:9-54
 activity#com.willpower.tracker.activities.OnboardActivity
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:16:13-36
 	android:theme
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:17:13-58
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:17:13-58
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:15:13-55
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:15:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:18:13-21:29
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.willpower.tracker.activities.SignInActivity
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:24:9-26:40
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:25:13-54
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:25:13-54
 activity#com.willpower.tracker.activities.SignUpActivity
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:28:9-30:40
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:30:13-37
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:29:13-54
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:29:13-54
 activity#com.willpower.tracker.activities.HomeActivity
-ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:32:9-34:40
+ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:34:13-37
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml:33:13-52
+		ADDED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml:33:13-52
 uses-sdk
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
-INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/9.1.0/transforms/3aad8cfea32ecab51577650e79aa6906/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/9.1.0/transforms/3aad8cfea32ecab51577650e79aa6906/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/9.1.0/transforms/8830d46d4b892a087f9d87b5542a0749/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/9.1.0/transforms/8830d46d4b892a087f9d87b5542a0749/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/57ba3c2df2d786973a3ae6c600df3ebd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/57ba3c2df2d786973a3ae6c600df3ebd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/594d66b73263008b3da2de992cf27a55/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/9.1.0/transforms/594d66b73263008b3da2de992cf27a55/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/9.1.0/transforms/595d14b83d425d2e738e60c417b8bee3/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/9.1.0/transforms/595d14b83d425d2e738e60c417b8bee3/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/9.1.0/transforms/f2edd8288020a75d638d0019424964d2/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/9.1.0/transforms/f2edd8288020a75d638d0019424964d2/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/9e51a9017603f2d3ea0e3139b749eaf1/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/9e51a9017603f2d3ea0e3139b749eaf1/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/9.1.0/transforms/4d66e916595a5d4388ef1e4f59cd0fc1/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/9.1.0/transforms/4d66e916595a5d4388ef1e4f59cd0fc1/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/9.1.0/transforms/fa0747ee2ef57595715c7ad0ca85a987/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/9.1.0/transforms/fa0747ee2ef57595715c7ad0ca85a987/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/9a84bc6a3f4ee4fa36be10ec3956c0bd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/9a84bc6a3f4ee4fa36be10ec3956c0bd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c43768e6549cca9802d784dc8e3c7b98/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c43768e6549cca9802d784dc8e3c7b98/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/0827c4c9387d439ec623ff1b5ce77b63/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/0827c4c9387d439ec623ff1b5ce77b63/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/15bc55e4af046a7e854209dc68660354/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/15bc55e4af046a7e854209dc68660354/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/0a93cdfe14cd8cc65390133ec3bb5a04/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/0a93cdfe14cd8cc65390133ec3bb5a04/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/10b672f8d61ead817d5746e2f1cf7a31/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/10b672f8d61ead817d5746e2f1cf7a31/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/ef61f77786f9a1e5b26c4fce785b7bb7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/ef61f77786f9a1e5b26c4fce785b7bb7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/f078f49a6c6555aedc75a974dffa92e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/f078f49a6c6555aedc75a974dffa92e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8c58b3a1b3d91be82d419eb784b77564/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8c58b3a1b3d91be82d419eb784b77564/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c0eb04d892a21638d3262218819d1ae8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/9.1.0/transforms/c0eb04d892a21638d3262218819d1ae8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7e5d5020614ee5bf298ead00253f26eb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7e5d5020614ee5bf298ead00253f26eb/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/9.1.0/transforms/7a222ab7f12d4ed23c8a76f41db12347/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/9.1.0/transforms/7a222ab7f12d4ed23c8a76f41db12347/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/129c292d65a3806d636629102d7aba46/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/129c292d65a3806d636629102d7aba46/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/aabd3bcaf59a21a54893fce2c34eecfa/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/aabd3bcaf59a21a54893fce2c34eecfa/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14b0fbb8c37c282e9679da02f9dfd262/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14b0fbb8c37c282e9679da02f9dfd262/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14277bda3bc9fd1380e3500b58cd93cd/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/14277bda3bc9fd1380e3500b58cd93cd/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/0b1d309bb0af08ddafcf5f51cd3f9070/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/0b1d309bb0af08ddafcf5f51cd3f9070/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/a69e19775dd6ff37c27c0e5d16445adc/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/a69e19775dd6ff37c27c0e5d16445adc/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/9c29b1d91c7cd2e66e207e2605825637/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/9c29b1d91c7cd2e66e207e2605825637/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/4b35241d29e84189f71a8f5aaa80dedf/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/4b35241d29e84189f71a8f5aaa80dedf/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/25f5d8b753e40054af8ac34e9479d156/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/25f5d8b753e40054af8ac34e9479d156/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7182905c94698ffe18832cd7ca57c2d8/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7182905c94698ffe18832cd7ca57c2d8/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/d95db00f08a1cbb0eeadb2ca59de9da3/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/d95db00f08a1cbb0eeadb2ca59de9da3/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/50531204c41d1ecf2c170c75daac96f3/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/50531204c41d1ecf2c170c75daac96f3/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/9.1.0/transforms/f7302746f3d42d4303c9e315b1e509f7/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/9.1.0/transforms/f7302746f3d42d4303c9e315b1e509f7/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8b684244fad93985f8c4a3e2c271a4fd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/8b684244fad93985f8c4a3e2c271a4fd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/93a0f5e21d82bcae9929ee521e2ee639/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/93a0f5e21d82bcae9929ee521e2ee639/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7a8afeae32630d0e4e5933b0dd321b40/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/9.1.0/transforms/7a8afeae32630d0e4e5933b0dd321b40/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
+INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/a377907f8f576c7151cae9cce55d5e1b/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/a377907f8f576c7151cae9cce55d5e1b/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/0f250d57f3a86cbc2736b0f726228b4c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/0f250d57f3a86cbc2736b0f726228b4c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/583d4500ab24c03c1ce78f7a37791e80/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/583d4500ab24c03c1ce78f7a37791e80/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/8.9/transforms/4d4e40293a2b711328a359b641021902/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/8.9/transforms/4d4e40293a2b711328a359b641021902/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/8.9/transforms/d3a49b58f0bbdd11c270366a1243fecd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/snow/.gradle/caches/8.9/transforms/d3a49b58f0bbdd11c270366a1243fecd/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/8.9/transforms/4b86f74b848649b83425a316bd1aeda8/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/8.9/transforms/4b86f74b848649b83425a316bd1aeda8/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/8.9/transforms/547f121956d7476b7c524b0164a8659b/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/snow/.gradle/caches/8.9/transforms/547f121956d7476b7c524b0164a8659b/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/8.9/transforms/d4e164239e3b9654b5d70175b6b9e88d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/snow/.gradle/caches/8.9/transforms/d4e164239e3b9654b5d70175b6b9e88d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/8.9/transforms/396ab63016ea73734a7f77e00d91a02c/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /home/snow/.gradle/caches/8.9/transforms/396ab63016ea73734a7f77e00d91a02c/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/8.9/transforms/e0a0db477da5c0c3a680adb437df85f3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/snow/.gradle/caches/8.9/transforms/e0a0db477da5c0c3a680adb437df85f3/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/8.9/transforms/c7702d770de6a0e30c50ea4ac915031d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/snow/.gradle/caches/8.9/transforms/c7702d770de6a0e30c50ea4ac915031d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/8.9/transforms/1a35759641171b20c8448877648cc6c9/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/snow/.gradle/caches/8.9/transforms/1a35759641171b20c8448877648cc6c9/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/8.9/transforms/96c8256d1f4c76007320a66996cc4de3/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/snow/.gradle/caches/8.9/transforms/96c8256d1f4c76007320a66996cc4de3/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/8.9/transforms/aeb5dc1fa50d7fd5ad4b24e5ffb01195/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/snow/.gradle/caches/8.9/transforms/aeb5dc1fa50d7fd5ad4b24e5ffb01195/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/8.9/transforms/a11e986323428b19667708acf20f853e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/snow/.gradle/caches/8.9/transforms/a11e986323428b19667708acf20f853e/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/82e3b852c4cbbdbebdd3a7d52b466112/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/82e3b852c4cbbdbebdd3a7d52b466112/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/8.9/transforms/da9c799369b36df73fe3ee3dfbf8f8db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/snow/.gradle/caches/8.9/transforms/da9c799369b36df73fe3ee3dfbf8f8db/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/8.9/transforms/4ba124cf825ccf2a69b2642e44b0efd7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/snow/.gradle/caches/8.9/transforms/4ba124cf825ccf2a69b2642e44b0efd7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/8.9/transforms/7b809c96a29fbfb7de11b3a57f0331c8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/snow/.gradle/caches/8.9/transforms/7b809c96a29fbfb7de11b3a57f0331c8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/8.9/transforms/c86c174e756db69cdf0b5a228647b9fa/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/snow/.gradle/caches/8.9/transforms/c86c174e756db69cdf0b5a228647b9fa/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/8.9/transforms/6f57d445dc2b7b17599cecc7d5b53684/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/snow/.gradle/caches/8.9/transforms/6f57d445dc2b7b17599cecc7d5b53684/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/8.9/transforms/a6546657e2b8b9f71085502887ea3702/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/snow/.gradle/caches/8.9/transforms/a6546657e2b8b9f71085502887ea3702/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fc38ae2e076beec4e5fbb25f6285f648/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fc38ae2e076beec4e5fbb25f6285f648/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/8.9/transforms/5e75aa8d90c06de4b1d703ccf1355540/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/snow/.gradle/caches/8.9/transforms/5e75aa8d90c06de4b1d703ccf1355540/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fdf357a77723c656e49e1542c28041fa/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/snow/.gradle/caches/8.9/transforms/fdf357a77723c656e49e1542c28041fa/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2a999706caa3e6891b0d3a5b9a41a974/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2a999706caa3e6891b0d3a5b9a41a974/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/8.9/transforms/cae77d92feda4a12e954061c8c184ac6/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/snow/.gradle/caches/8.9/transforms/cae77d92feda4a12e954061c8c184ac6/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/8.9/transforms/c6b4264a4c6484347f00641f1b593f22/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/snow/.gradle/caches/8.9/transforms/c6b4264a4c6484347f00641f1b593f22/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/8.9/transforms/2213357bcfe1cccd41a7e138e013c8cb/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/caches/8.9/transforms/2213357bcfe1cccd41a7e138e013c8cb/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/8.9/transforms/a92079a35573fb6362848d88369ef5c8/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/8.9/transforms/a92079a35573fb6362848d88369ef5c8/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/8.9/transforms/0195a668f2992e0f000aa651e7545f49/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/8.9/transforms/0195a668f2992e0f000aa651e7545f49/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fd3c08c754db485d3bfa1322bd107a61/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fd3c08c754db485d3bfa1322bd107a61/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/18363e5a107bdc05eb84c99f0dc0db62/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/18363e5a107bdc05eb84c99f0dc0db62/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/7de4202b32b7b584b96361a782a8aa12/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/7de4202b32b7b584b96361a782a8aa12/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/8.9/transforms/6e26e8e53633c31a939db207f194c34a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/8.9/transforms/6e26e8e53633c31a939db207f194c34a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/b5711da55469adf92f3573f0c25a1f41/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/b5711da55469adf92f3573f0c25a1f41/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/8.9/transforms/28b00d3ab4088bd23d0358fc954c864c/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/snow/.gradle/caches/8.9/transforms/28b00d3ab4088bd23d0358fc954c864c/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/snow/Projects/Replit/lab-1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/snow/Projects/Android_Main/lab-1/app/src/main/AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/9.1.0/transforms/0ca2277f3ad798bd62c2a35d11938fbf/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/310728483b1ffcc4b83ed17145c8c204/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/9.1.0/transforms/527db5765554991b4b51ba61d12d4548/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/d274fa811680ba4a90ad500d153c6f6c/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#com.willpower.tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.willpower.tracker.lab1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#com.willpower.tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.willpower.tracker.lab1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/9.1.0/transforms/f3b5d5de073e84658f5b345152a43925/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.12.0] /home/snow/.gradle/caches/8.9/transforms/68b915a9d3dd7b248162570157599e94/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/9.1.0/transforms/2dd70f9ae3399c066278a1533d732d70/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/snow/.gradle/caches/8.9/transforms/2c226c9784f186c49f87bbf3ac084e3d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/9.1.0/transforms/420c001317b86a577dcefc8904a72771/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/68502a53e3187b71cbf963e02c0cc854/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

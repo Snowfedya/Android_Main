@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.willpower.tracker",
+  "applicationId": "com.willpower.tracker.lab1",
   "variantName": "debug",
   "elements": [
     {

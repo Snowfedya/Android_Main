@@ -1412,6 +1412,7 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color error_red
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark

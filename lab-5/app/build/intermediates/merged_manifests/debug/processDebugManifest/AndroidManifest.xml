@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.willpower.tracker"
+    package="com.willpower.tracker.lab5"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -12,10 +12,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <permission
-        android:name="com.willpower.tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.willpower.tracker.lab5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.willpower.tracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.willpower.tracker.lab5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +26,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.WillPowerTracker"
         android:usesCleartextTraffic="false" >
         <activity
@@ -42,7 +41,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.willpower.tracker.androidx-startup"
+            android:authorities="com.willpower.tracker.lab5.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

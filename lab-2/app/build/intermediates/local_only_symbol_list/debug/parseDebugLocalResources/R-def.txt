@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color error_red
 color md_theme_background
 color md_theme_error
 color md_theme_errorContainer
@@ -28,6 +29,8 @@ color success_green
 color warning_orange
 drawable bg_card
 drawable bg_gradient
+drawable ic_launcher_background
+drawable ic_launcher_foreground
 drawable ic_willpower
 id actvGender
 id btnGetStarted
@@ -68,6 +71,8 @@ layout activity_onboard
 layout activity_sign_in
 layout activity_sign_up
 layout item_challenge
+mipmap ic_launcher
+mipmap ic_launcher_round
 string age_hint
 string already_have_account
 string app_name

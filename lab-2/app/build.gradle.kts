@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.willpower.tracker"
+        applicationId = "com.willpower.tracker.lab2"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

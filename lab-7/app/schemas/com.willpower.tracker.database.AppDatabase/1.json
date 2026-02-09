@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "39fdcb0bf60dbbd202cfb99a832f1dae",
+    "entities": [
+      {
+        "tableName": "challenges",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `category` TEXT NOT NULL, `duration_minutes` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL, `streak` INTEGER NOT NULL, `created_at` INTEGER NOT NULL, `last_completed_at` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "durationMinutes",
+            "columnName": "duration_minutes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCompleted",
+            "columnName": "is_completed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "streak",
+            "columnName": "streak",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastCompletedAt",
+            "columnName": "last_completed_at",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "completion_history",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `challenge_id` INTEGER NOT NULL, `completed_date` INTEGER NOT NULL, `duration_actual` INTEGER, `notes` TEXT, FOREIGN KEY(`challenge_id`) REFERENCES `challenges`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "challengeId",
+            "columnName": "challenge_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "completedDate",
+            "columnName": "completed_date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "durationActual",
+            "columnName": "duration_actual",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_completion_history_challenge_id",
+            "unique": false,
+            "columnNames": [
+              "challenge_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_completion_history_challenge_id` ON `${TABLE_NAME}` (`challenge_id`)"
+          },
+          {
+            "name": "index_completion_history_completed_date",
+            "unique": false,
+            "columnNames": [
+              "completed_date"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_completion_history_completed_date` ON `${TABLE_NAME}` (`completed_date`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "challenges",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "challenge_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '39fdcb0bf60dbbd202cfb99a832f1dae')"
+    ]
+  }
+}

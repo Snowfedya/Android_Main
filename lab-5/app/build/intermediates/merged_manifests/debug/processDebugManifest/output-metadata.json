@@ -4,7 +4,7 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.willpower.tracker",
+  "applicationId": "com.willpower.tracker.lab5",
   "variantName": "debug",
   "elements": [
     {

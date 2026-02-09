@@ -34,21 +34,21 @@ class ChallengeEntityAdapter(
         fun bind(challenge: ChallengeEntity) {
             binding.tvTitle.text = challenge.title
             binding.tvDescription.text = challenge.description
-            binding.tvCategory.text = challenge.category
+            binding.chipCategory.text = challenge.category
             binding.tvDuration.text = "${challenge.durationMinutes} мин"
             binding.tvStreak.text = "Streak: ${challenge.streak}"
-            
-            binding.checkBox.setOnCheckedChangeListener(null)
-            binding.checkBox.isChecked = challenge.isCompleted
-            
-            binding.checkBox.setOnCheckedChangeListener { _, isChecked ->
+
+            binding.cbCompleted.setOnCheckedChangeListener(null)
+            binding.cbCompleted.isChecked = challenge.isCompleted
+
+            binding.cbCompleted.setOnCheckedChangeListener { _, isChecked ->
                 onCheckChanged(challenge, isChecked)
             }
-            
+
             binding.root.setOnClickListener {
                 onItemClick(challenge)
             }
-            
+
             binding.root.alpha = if (challenge.isCompleted) 0.7f else 1.0f
         }
     }

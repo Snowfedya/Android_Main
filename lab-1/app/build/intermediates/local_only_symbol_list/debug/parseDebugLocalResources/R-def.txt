@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color error_red
 color md_theme_background
 color md_theme_error
 color md_theme_errorContainer

@@ -1,0 +1,19 @@
+{
+  "project_name": "Willpower Tracker",
+  "workflow": "gsd",
+  "preferred_agents": {
+    "planning": "project-planner",
+    "research": "gsd-project-researcher",
+    "roadmap": "gsd-roadmapper",
+    "execution": "gsd-executor"
+  },
+  "directories": {
+    "planning": ".planning",
+    "research": ".planning/research",
+    "output": "app/src/main/java"
+  },
+  "flags": {
+    "auto_verify": true,
+    "use_git": true
+  }
+}

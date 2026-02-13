@@ -7,7 +7,9 @@ data class Challenge(
     val category: String,
     val durationMinutes: Int,
     val streak: Int = 0,
-    val isCompleted: Boolean = false
+    val isCompleted: Boolean = false,
+    val difficulty: String = "Средний",
+    val technique: String = "Willpower Instinct"
 ) {
     companion object {
         fun getSampleChallenges(): List<Challenge> = listOf(

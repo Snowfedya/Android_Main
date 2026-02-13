@@ -1,84 +1,107 @@
 package com.willpower.tracker.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.willpower.tracker.adapters.CharacterAdapter
-import com.willpower.tracker.database.AppDatabase
+import com.willpower.tracker.R
+import com.willpower.tracker.adapters.ChallengeAdapter
 import com.willpower.tracker.databinding.FragmentHomeBinding
-import com.willpower.tracker.repository.CharacterRepository
-import kotlinx.coroutines.launch
+import com.willpower.tracker.models.Challenge
 
 class HomeFragment : Fragment() {
 
+    private val TAG = "HomeFragment"
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    
-    private lateinit var adapter: CharacterAdapter
-    private lateinit var repository: CharacterRepository
+    private lateinit var adapter: ChallengeAdapter
+    private val challenges = Challenge.getSampleChallenges().toMutableList()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate() called")
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        Log.d(TAG, "onCreateView() called")
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        
-        val database = AppDatabase.getDatabase(requireContext())
-        repository = CharacterRepository(database)
-        
+        Log.d(TAG, "onViewCreated() called")
+
         setupRecyclerView()
-        observeData()
-        
-        // Cold Start
-        viewLifecycleOwner.lifecycleScope.launch {
-            try {
-                repository.coldStart()
-            } catch (e: Exception) {
-                Toast.makeText(requireContext(), "Ошибка сети: ${e.message}", Toast.LENGTH_SHORT).show()
-            }
-        }
-        
-        binding.swipeRefresh.setOnRefreshListener {
-            viewLifecycleOwner.lifecycleScope.launch {
-                try {
-                    repository.refreshCharacters()
-                } catch (e: Exception) {
-                    Toast.makeText(requireContext(), "Ошибка обновления: ${e.message}", Toast.LENGTH_SHORT).show()
-                } finally {
-                    binding.swipeRefresh.isRefreshing = false
-                }
-            }
-        }
+        setupClickListeners()
     }
 
     private fun setupRecyclerView() {
-        adapter = CharacterAdapter()
+        adapter = ChallengeAdapter(
+            challenges = challenges,
+            onItemClick = { challenge ->
+                val action = HomeFragmentDirections.actionHomeToDetails(
+                    challengeId = challenge.id,
+                    challengeTitle = challenge.title
+                )
+                findNavController().navigate(action)
+            },
+            onCheckChanged = { challenge, isChecked ->
+                val index = challenges.indexOfFirst { it.id == challenge.id }
+                if (index != -1) {
+                    challenges[index] = challenge.copy(isCompleted = isChecked)
+                    adapter.notifyItemChanged(index)
+
+                    val message = if (isChecked) {
+                        "Отлично! ${challenge.title} выполнено!"
+                    } else {
+                        "${challenge.title} отмечено как невыполненное"
+                    }
+                    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+                }
+            }
+        )
+
         binding.rvChallenges.layoutManager = LinearLayoutManager(requireContext())
         binding.rvChallenges.adapter = adapter
     }
 
-    private fun observeData() {
-        viewLifecycleOwner.lifecycleScope.launch {
-            repository.allCharacters.collect { characters ->
-                adapter.updateData(characters)
-                binding.tvChallengesTitle.text = "Персонажи (${characters.size})"
-            }
+    private fun setupClickListeners() {
+        binding.fabAdd.setOnClickListener {
+            Toast.makeText(requireContext(), "Добавить новый челлендж", Toast.LENGTH_SHORT).show()
         }
+
+        binding.btnSettings.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_settings)
+        }
+
+        binding.btnReports.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_reports)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume() called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause() called")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+        Log.d(TAG, "onDestroyView() called")
         _binding = null
     }
 }

@@ -40,4 +40,26 @@
     <string name="gender_male">Мужской</string>
     <string name="gender_female">Женский</string>
     <string name="gender_other">Другой</string>
+
+    <!-- Details -->
+    <string name="details_title">Детали челленджа</string>
+    <string name="start_focus_mode">Начать фокус-режим</string>
+    <string name="mark_complete">Отметить выполненным</string>
+
+    <!-- Focus Mode -->
+    <string name="focus_mode_title">Фокус-режим</string>
+    <string name="end_session">Завершить сессию</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="notifications">Уведомления</string>
+    <string name="theme">Тема</string>
+    <string name="system_theme">Системная тема</string>
+    <string name="light_theme">Светлая тема</string>
+    <string name="dark_theme">Темная тема</string>
+    <string name="backup">Резервное копирование</string>
+
+    <!-- Reports -->
+    <string name="reports_title">Отчеты</string>
+    <string name="generate_report">Создать отчет</string>
 </resources>

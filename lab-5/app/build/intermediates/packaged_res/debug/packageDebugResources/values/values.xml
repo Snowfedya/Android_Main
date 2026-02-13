@@ -29,7 +29,7 @@
     <color name="warning_orange">#FF9800</color>
     <string name="age_hint">Возраст</string>
     <string name="already_have_account">Уже есть аккаунт?</string>
-    <string name="app_name">WillPower Tracker</string>
+    <string name="app_name">WillPower Tracker Lab 5</string>
     <string name="btn_get_started">Начать</string>
     <string name="btn_register">Зарегистрироваться</string>
     <string name="btn_sign_in">Войти</string>

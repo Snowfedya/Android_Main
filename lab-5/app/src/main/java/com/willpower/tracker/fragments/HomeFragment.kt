@@ -7,92 +7,65 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.willpower.tracker.adapters.ChallengeAdapter
+import com.willpower.tracker.adapters.CharacterAdapter
 import com.willpower.tracker.databinding.FragmentHomeBinding
-import com.willpower.tracker.models.Challenge
+import com.willpower.tracker.repository.CharacterRepository
+import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
 
     private val TAG = "HomeFragment"
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var adapter: ChallengeAdapter
-    private val challenges = Challenge.getSampleChallenges().toMutableList()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate() called")
-    }
+    private lateinit var adapter: CharacterAdapter
+    private val repository = CharacterRepository()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        Log.d(TAG, "onCreateView() called")
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d(TAG, "onViewCreated() called")
 
         setupRecyclerView()
-        setupClickListeners()
+        loadData()
     }
 
     private fun setupRecyclerView() {
-        adapter = ChallengeAdapter(
-            challenges = challenges,
-            onItemClick = { challenge ->
-                val action = HomeFragmentDirections.actionHomeToDetails(
-                    challengeId = challenge.id,
-                    challengeTitle = challenge.title
-                )
-                findNavController().navigate(action)
-            },
-            onCheckChanged = { challenge, isChecked ->
-                val index = challenges.indexOfFirst { it.id == challenge.id }
-                if (index != -1) {
-                    challenges[index] = challenge.copy(isCompleted = isChecked)
-                    adapter.notifyItemChanged(index)
-                    
-                    val message = if (isChecked) {
-                        "Отлично! ${challenge.title} выполнено!"
-                    } else {
-                        "${challenge.title} отмечено как невыполненное"
-                    }
-                    Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
-                }
-            }
-        )
-        
+        adapter = CharacterAdapter()
         binding.rvChallenges.layoutManager = LinearLayoutManager(requireContext())
         binding.rvChallenges.adapter = adapter
     }
 
-    private fun setupClickListeners() {
-        binding.fabAdd.setOnClickListener {
-            Toast.makeText(requireContext(), "Добавить новый челлендж", Toast.LENGTH_SHORT).show()
+    private fun loadData() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                // Загружаем 3 страницы, чтобы получить >50 персонажей (20 * 3 = 60)
+                val page1 = repository.getCharacters(1)
+                val page2 = repository.getCharacters(2)
+                val page3 = repository.getCharacters(3)
+                
+                val allCharacters = page1 + page2 + page3
+                adapter.updateData(allCharacters)
+                
+                binding.tvChallengesTitle.text = "Персонажи (${allCharacters.size})"
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading data", e)
+                Toast.makeText(requireContext(), "Ошибка загрузки: ${e.message}", Toast.LENGTH_LONG).show()
+            }
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, "onResume() called")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "onPause() called")
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d(TAG, "onDestroyView() called")
         _binding = null
     }
 }

@@ -1,19 +1,25 @@
 package com.willpower.tracker.fragments
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.willpower.tracker.databinding.FragmentSettingsBinding
 import com.willpower.tracker.storage.UserPreferencesManager
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import java.io.BufferedReader
+import java.io.InputStreamReader
 
 class SettingsFragment : Fragment() {
 
@@ -29,7 +35,18 @@ class SettingsFragment : Fragment() {
         private const val KEY_DARK_MODE = "dark_mode_enabled"
         private const val KEY_SOUND_ENABLED = "sound_enabled"
         private const val KEY_VIBRATION_ENABLED = "vibration_enabled"
-        private const val KEY_LANGUAGE = "language"
+    }
+
+    private val createDocumentLauncher = registerForActivityResult(
+        ActivityResultContracts.CreateDocument("text/plain")
+    ) { uri ->
+        uri?.let { writeBackupToFile(it) }
+    }
+
+    private val openDocumentLauncher = registerForActivityResult(
+        ActivityResultContracts.OpenDocument()
+    ) { uri ->
+        uri?.let { readBackupFromFile(it) }
     }
 
     override fun onCreateView(
@@ -123,6 +140,74 @@ class SettingsFragment : Fragment() {
                 showToast("Все данные очищены")
                 loadSettings()
             }
+        }
+
+        binding.btnBackup.setOnClickListener {
+            val fileName = binding.etBackupName.text.toString().trim()
+            if (fileName.isEmpty()) {
+                showToast("Введите имя файла")
+                return@setOnClickListener
+            }
+            createBackup(fileName)
+        }
+
+        binding.btnRestore.setOnClickListener {
+            openDocumentLauncher.launch(arrayOf("text/plain"))
+        }
+    }
+
+    private fun createBackup(fileName: String) {
+        createDocumentLauncher.launch(fileName)
+    }
+
+    private fun writeBackupToFile(uri: Uri) {
+        try {
+            requireContext().contentResolver.openOutputStream(uri)?.use { outputStream ->
+                // Здесь мы собираем данные для бэкапа.
+                // В реальном приложении нужно брать данные из БД или всех преференсов.
+                // Для лабы возьмем текущие настройки.
+                viewLifecycleOwner.lifecycleScope.launch {
+                    val userName = preferencesManager.userNameFlow.first()
+                    val userEmail = preferencesManager.userEmailFlow.first()
+                    val theme = preferencesManager.themeModeFlow.first()
+                    
+                    val backupData = """
+                        Backup Date: ${java.util.Date()}
+                        User: $userName ($userEmail)
+                        Theme: $theme
+                        Dark Mode: ${binding.switchDarkMode.isChecked}
+                        Sound: ${binding.switchSound.isChecked}
+                    """.trimIndent()
+                    
+                    outputStream.write(backupData.toByteArray())
+                    showToast("Бэкап успешно создан")
+                }
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error writing backup", e)
+            showToast("Ошибка создания бэкапа: ${e.message}")
+        }
+    }
+
+    private fun readBackupFromFile(uri: Uri) {
+        try {
+            requireContext().contentResolver.openInputStream(uri)?.use { inputStream ->
+                BufferedReader(InputStreamReader(inputStream)).use { reader ->
+                    val content = StringBuilder()
+                    var line: String? = reader.readLine()
+                    while (line != null) {
+                        content.append(line).append("\n")
+                        line = reader.readLine()
+                    }
+                    // В лабе нужно просто восстановить или показать данные.
+                    // Мы покажем содержимое в Toast или Dialog.
+                    // В реальной жизни тут был бы парсинг.
+                    showToast("Файл прочитан:\n$content")
+                }
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error reading backup", e)
+            showToast("Ошибка чтения бэкапа: ${e.message}")
         }
     }
     

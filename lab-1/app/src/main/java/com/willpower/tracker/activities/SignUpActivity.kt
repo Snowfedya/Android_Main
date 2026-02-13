@@ -115,6 +115,9 @@ class SignUpActivity : AppCompatActivity() {
         } else if (password.length < 6) {
             tilPassword.error = getString(R.string.error_password_short)
             isValid = false
+        } else if (!password.any { it.isDigit() }) {
+            tilPassword.error = "Пароль должен содержать хотя бы одну цифру"
+            isValid = false
         } else {
             tilPassword.error = null
         }

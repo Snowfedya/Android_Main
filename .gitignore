@@ -10,6 +10,9 @@ build/
 .gradle/
 local.properties
 
+# API Keys - keep gradle.properties with secrets out of version control
+lab-*/gradle.properties
+
 # Claude Code (local settings only)
 .claude/settings.local.json
 .claude/cache/

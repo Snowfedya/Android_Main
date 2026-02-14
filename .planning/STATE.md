@@ -53,4 +53,4 @@
 |---|-------------|------|--------|-----------|
 | 1 | Implement all missing Lab 6-7 features: Room DB, Settings/Reports, AI API, DetailsFragment, UI animations | 2026-02-13 | aa33999 | [1-implement-all-missing-lab-6-7-features-r](./quick/1-implement-all-missing-lab-6-7-features-r/) |
 | 2 | Configure AI API key in gradle.properties and test glm-4.7-flash integration | 2026-02-14 | 224b25d | [2-configure-ai-api-key-in-gradle-propertie](./quick/2-configure-ai-api-key-in-gradle-propertie/) | Complete |
-| 3 | Implement MVVM ViewModels with Flow-based reactive UI and polish Lab 7 with animations | 2026-02-14 | 30288a9 | [3-implement-mvvm-viewmodels-with-flow-base](./quick/3-implement-mvvm-viewmodels-with-flow-base/) | Complete |
+| 3 | Implement MVVM ViewModels with Flow-based reactive UI and polish Lab 7 with animations | 2026-02-14 | ed13c8e | [3-implement-mvvm-viewmodels-with-flow-base](./quick/3-implement-mvvm-viewmodels-with-flow-base/) | Complete |

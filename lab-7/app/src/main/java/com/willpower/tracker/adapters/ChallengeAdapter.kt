@@ -5,16 +5,42 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.chip.Chip
 import com.willpower.tracker.R
 import com.willpower.tracker.models.Challenge
 
+/**
+ * DiffUtil.ItemCallback for comparing Challenge items.
+ * Enables efficient RecyclerView updates by detecting which items changed.
+ */
+class ChallengeDiffCallback : DiffUtil.ItemCallback<Challenge>() {
+    override fun areItemsTheSame(oldItem: Challenge, newItem: Challenge): Boolean {
+        // Compare unique identifier (same item = same id)
+        return oldItem.id == newItem.id
+    }
+
+    override fun areContentsTheSame(oldItem: Challenge, newItem: Challenge): Boolean {
+        // Compare all relevant fields for content equality
+        return oldItem.title == newItem.title &&
+                oldItem.description == newItem.description &&
+                oldItem.isCompleted == newItem.isCompleted &&
+                oldItem.category == newItem.category &&
+                oldItem.streak == newItem.streak &&
+                oldItem.durationMinutes == newItem.durationMinutes
+    }
+}
+
+/**
+ * RecyclerView adapter for challenges using ListAdapter with DiffUtil.
+ * Automatically computes list differences and animates changes.
+ */
 class ChallengeAdapter(
-    private var challenges: List<Challenge>,
     private val onItemClick: (Challenge) -> Unit = {},
     private val onCheckChanged: (Challenge, Boolean) -> Unit = { _, _ -> }
-) : RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder>() {
+) : ListAdapter<Challenge, ChallengeAdapter.ChallengeViewHolder>(ChallengeDiffCallback()) {
 
     class ChallengeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cbCompleted: CheckBox = itemView.findViewById(R.id.cbCompleted)
@@ -32,7 +58,7 @@ class ChallengeAdapter(
     }
 
     override fun onBindViewHolder(holder: ChallengeViewHolder, position: Int) {
-        val challenge = challenges[position]
+        val challenge = getItem(position)
         
         holder.cbCompleted.isChecked = challenge.isCompleted
         holder.tvTitle.text = challenge.title
@@ -51,13 +77,6 @@ class ChallengeAdapter(
         holder.itemView.setOnClickListener {
             onItemClick(challenge)
         }
-    }
-
-    override fun getItemCount(): Int = challenges.size
-
-    fun updateChallenges(newChallenges: List<Challenge>) {
-        challenges = newChallenges
-        notifyDataSetChanged()
     }
 
     private fun formatDuration(minutes: Int): String {

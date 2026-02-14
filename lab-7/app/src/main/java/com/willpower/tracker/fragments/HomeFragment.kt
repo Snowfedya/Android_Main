@@ -64,7 +64,6 @@ class HomeFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = ChallengeAdapter(
-            challenges = emptyList(),
             onItemClick = { challenge ->
                 val action = HomeFragmentDirections.actionHomeToDetails(
                     challengeId = challenge.id, // Keep as Int for navigation
@@ -162,7 +161,7 @@ class HomeFragment : Fragment() {
                 isCompleted = false // Could be enhanced with completion tracking
             )
         }
-        adapter.updateChallenges(challenges)
+        adapter.submitList(challenges)
     }
 
     private fun updateAdviceDisplay(advice: AiAdviceEntity?) {

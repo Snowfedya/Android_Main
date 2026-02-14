@@ -7,12 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.willpower.tracker.R
+import com.willpower.tracker.database.entities.TaskEntity
 import com.willpower.tracker.databinding.FragmentDetailsBinding
-import com.willpower.tracker.models.Challenge
+import com.willpower.tracker.viewmodel.DetailsViewModel
+import kotlinx.coroutines.launch
 
+/**
+ * DetailsFragment displays task details and focus mode controls.
+ * Uses DetailsViewModel with task loading from Room database.
+ */
 class DetailsFragment : Fragment() {
 
     private val TAG = "DetailsFragment"
@@ -20,15 +29,18 @@ class DetailsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val args: DetailsFragmentArgs by navArgs()
-    private lateinit var challenge: Challenge
+
+    // Create ViewModel with custom factory for taskId parameter
+    private val viewModel: DetailsViewModel by lazy {
+        DetailsViewModel.Factory(
+            application = requireActivity().application,
+            taskId = args.challengeId.toLong() // Convert Int to Long
+        ).create(DetailsViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate() called")
-
-        // Find the challenge by ID
-        challenge = Challenge.getSampleChallenges().find { it.id == args.challengeId }
-            ?: Challenge.getSampleChallenges().first()
+        Log.d(TAG, "onCreate() called with taskId: ${args.challengeId}")
     }
 
     override fun onCreateView(
@@ -46,8 +58,8 @@ class DetailsFragment : Fragment() {
         Log.d(TAG, "onViewCreated() called")
 
         setupToolbar()
-        displayChallengeDetails()
         setupClickListeners()
+        observeViewModel()
     }
 
     private fun setupToolbar() {
@@ -57,31 +69,64 @@ class DetailsFragment : Fragment() {
         binding.toolbar.title = args.challengeTitle
     }
 
-    private fun displayChallengeDetails() {
-        binding.tvTitle.text = challenge.title
-        binding.tvDescription.text = challenge.description
-        binding.tvTechnique.text = "Техника: Willpower Instinct"
-        binding.tvDuration.text = formatDuration(challenge.durationMinutes)
-        binding.tvDifficulty.text = challenge.difficulty
-        binding.tvCategory.text = challenge.category
-    }
-
     private fun setupClickListeners() {
         binding.btnStartFocusMode.setOnClickListener {
-            val action = DetailsFragmentDirections.actionDetailsToFocusMode(
-                challengeId = challenge.id,
-                durationMinutes = challenge.durationMinutes
-            )
-            findNavController().navigate(action)
+            viewModel.task.value?.let { task ->
+                startTimer(task.recommendedDurationMin)
+            }
         }
 
         binding.btnMarkComplete.setOnClickListener {
-            Toast.makeText(
-                requireContext(),
-                "Отлично! ${challenge.title} выполнено!",
-                Toast.LENGTH_SHORT
-            ).show()
+            viewModel.markComplete()
         }
+    }
+
+    private fun startTimer(durationMinutes: Int) {
+        viewModel.startTimer(durationMinutes)
+        Toast.makeText(
+            requireContext(),
+            "Фокус-режим запущен на $durationMinutes минут",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
+    private fun observeViewModel() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+                // Collect task data
+                launch {
+                    viewModel.task.collect { task ->
+                        task?.let { displayTaskDetails(it) }
+                    }
+                }
+
+                // Collect completion message
+                launch {
+                    viewModel.completionMessage.collect { message ->
+                        message?.let {
+                            Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
+                            viewModel.clearCompletionMessage()
+                            // Navigate back after completion
+                            findNavController().navigateUp()
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private fun displayTaskDetails(task: TaskEntity) {
+        binding.tvTitle.text = task.title
+        binding.tvDescription.text = task.description
+        binding.tvTechnique.text = "Техника: ${task.techniqueName}"
+        binding.tvDuration.text = formatDuration(task.recommendedDurationMin)
+        binding.tvDifficulty.text = task.difficulty
+        binding.tvCategory.text = task.category
+
+        // Enable focus mode button
+        binding.btnStartFocusMode.isEnabled = true
+        binding.btnMarkComplete.isEnabled = true
     }
 
     private fun formatDuration(minutes: Int): String {

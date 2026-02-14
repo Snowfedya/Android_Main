@@ -3,7 +3,6 @@ package com.willpower.tracker.fragments
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -13,29 +12,30 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.willpower.tracker.databinding.FragmentSettingsBinding
-import com.willpower.tracker.storage.UserPreferencesManager
+import com.willpower.tracker.viewmodel.SettingsViewModel
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import java.io.BufferedReader
 import java.io.InputStreamReader
+import java.io.OutputStream
 
+/**
+ * SettingsFragment manages app settings and backup/restore.
+ * Uses SettingsViewModel with DataStore integration.
+ */
 class SettingsFragment : Fragment() {
 
     private val TAG = "SettingsFragment"
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var preferencesManager: UserPreferencesManager
-    private lateinit var sharedPreferences: SharedPreferences
-
-    companion object {
-        private const val PREFS_NAME = "willpower_shared_prefs"
-        private const val KEY_DARK_MODE = "dark_mode_enabled"
-        private const val KEY_SOUND_ENABLED = "sound_enabled"
-        private const val KEY_VIBRATION_ENABLED = "vibration_enabled"
-    }
+    // ViewModel with viewModels() delegate (no custom factory needed)
+    private val viewModel: SettingsViewModel by viewModels()
 
     private val createDocumentLauncher = registerForActivityResult(
         ActivityResultContracts.CreateDocument("text/plain")
@@ -63,40 +63,14 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated() called")
 
-        preferencesManager = UserPreferencesManager(requireContext())
-        sharedPreferences = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-
-        loadSettings()
         setupListeners()
-    }
-
-    private fun loadSettings() {
-        viewLifecycleOwner.lifecycleScope.launch {
-            val notificationEnabled = preferencesManager.notificationEnabledFlow.first()
-            val (hour, minute) = preferencesManager.reminderTimeFlow.first()
-            val themeMode = preferencesManager.themeModeFlow.first()
-
-            binding.switchNotifications.isChecked = notificationEnabled
-            binding.tvReminderTime.text = String.format("%02d:%02d", hour, minute)
-
-            when (themeMode) {
-                "light" -> binding.rgTheme.check(binding.rbLight.id)
-                "dark" -> binding.rgTheme.check(binding.rbDark.id)
-                else -> binding.rgTheme.check(binding.rbSystem.id)
-            }
-        }
-
-        binding.switchDarkMode.isChecked = sharedPreferences.getBoolean(KEY_DARK_MODE, false)
-        binding.switchSound.isChecked = sharedPreferences.getBoolean(KEY_SOUND_ENABLED, true)
-        binding.switchVibration.isChecked = sharedPreferences.getBoolean(KEY_VIBRATION_ENABLED, true)
+        observeViewModel()
     }
 
     private fun setupListeners() {
         binding.switchNotifications.setOnCheckedChangeListener { _, isChecked ->
-            viewLifecycleOwner.lifecycleScope.launch {
-                preferencesManager.setNotificationEnabled(isChecked)
-                showToast(if (isChecked) "Уведомления включены" else "Уведомления отключены")
-            }
+            viewModel.setNotificationEnabled(isChecked)
+            showToast(if (isChecked) "Уведомления включены" else "Уведомления отключены")
         }
 
         binding.rgTheme.setOnCheckedChangeListener { _, checkedId ->
@@ -105,41 +79,20 @@ class SettingsFragment : Fragment() {
                 binding.rbDark.id -> "dark"
                 else -> "system"
             }
-            viewLifecycleOwner.lifecycleScope.launch {
-                preferencesManager.setThemeMode(themeMode)
-                showToast("Тема изменена на: $themeMode")
-            }
+            viewModel.setThemeMode(themeMode)
+            showToast("Тема изменена на: $themeMode")
         }
 
         binding.btnSetReminder.setOnClickListener {
             val hour = binding.tpReminder.hour
             val minute = binding.tpReminder.minute
-            viewLifecycleOwner.lifecycleScope.launch {
-                preferencesManager.setReminderTime(hour, minute)
-                binding.tvReminderTime.text = String.format("%02d:%02d", hour, minute)
-                showToast("Напоминание установлено на $hour:${String.format("%02d", minute)}")
-            }
-        }
-
-        binding.switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
-            sharedPreferences.edit().putBoolean(KEY_DARK_MODE, isChecked).apply()
-        }
-
-        binding.switchSound.setOnCheckedChangeListener { _, isChecked ->
-            sharedPreferences.edit().putBoolean(KEY_SOUND_ENABLED, isChecked).apply()
-        }
-
-        binding.switchVibration.setOnCheckedChangeListener { _, isChecked ->
-            sharedPreferences.edit().putBoolean(KEY_VIBRATION_ENABLED, isChecked).apply()
+            viewModel.setReminderTime(hour, minute)
+            binding.tvReminderTime.text = String.format("%02d:%02d", hour, minute)
+            showToast("Напоминание установлено на $hour:${String.format("%02d", minute)}")
         }
 
         binding.btnClearData.setOnClickListener {
-            viewLifecycleOwner.lifecycleScope.launch {
-                preferencesManager.clearAll()
-                sharedPreferences.edit().clear().apply()
-                showToast("Все данные очищены")
-                loadSettings()
-            }
+            viewModel.clearAllData()
         }
 
         binding.btnBackup.setOnClickListener {
@@ -156,6 +109,83 @@ class SettingsFragment : Fragment() {
         }
     }
 
+    private fun observeViewModel() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+                // Collect notification setting
+                launch {
+                    viewModel.notificationEnabled.collect { enabled ->
+                        binding.switchNotifications.isChecked = enabled
+                    }
+                }
+
+                // Collect reminder time
+                launch {
+                    viewModel.reminderTime.collect { (hour, minute) ->
+                        binding.tvReminderTime.text = String.format("%02d:%02d", hour, minute)
+                        binding.tpReminder.hour = hour
+                        binding.tpReminder.minute = minute
+                    }
+                }
+
+                // Collect theme mode
+                launch {
+                    viewModel.themeMode.collect { mode ->
+                        when (mode) {
+                            "light" -> binding.rgTheme.check(binding.rbLight.id)
+                            "dark" -> binding.rgTheme.check(binding.rbDark.id)
+                            else -> binding.rgTheme.check(binding.rbSystem.id)
+                        }
+                    }
+                }
+
+                // Collect backup status
+                launch {
+                    viewModel.backupStatus.collect { status ->
+                        status?.let {
+                            when (it) {
+                                is SettingsViewModel.BackupStatus.Success -> {
+                                    showToast(it.message)
+                                    viewModel.clearBackupStatus()
+                                }
+                                is SettingsViewModel.BackupStatus.Error -> {
+                                    showToast(it.message)
+                                    viewModel.clearBackupStatus()
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Collect restore status
+                launch {
+                    viewModel.restoreStatus.collect { status ->
+                        status?.let {
+                            when (it) {
+                                is SettingsViewModel.RestoreStatus.Success -> {
+                                    showToast(it.message)
+                                    viewModel.clearRestoreStatus()
+                                }
+                                is SettingsViewModel.RestoreStatus.Error -> {
+                                    showToast(it.message)
+                                    viewModel.clearRestoreStatus()
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Collect clearing state
+                launch {
+                    viewModel.isClearingData.collect { isClearing ->
+                        binding.btnClearData.isEnabled = !isClearing
+                    }
+                }
+            }
+        }
+    }
+
     private fun createBackup(fileName: String) {
         createDocumentLauncher.launch(fileName)
     }
@@ -163,24 +193,8 @@ class SettingsFragment : Fragment() {
     private fun writeBackupToFile(uri: Uri) {
         try {
             requireContext().contentResolver.openOutputStream(uri)?.use { outputStream ->
-                // Здесь мы собираем данные для бэкапа.
-                // В реальном приложении нужно брать данные из БД или всех преференсов.
-                // Для лабораторной возьмем текущие настройки.
-                viewLifecycleOwner.lifecycleScope.launch {
-                    val userName = preferencesManager.userNameFlow.first()
-                    val userEmail = preferencesManager.userEmailFlow.first()
-                    val theme = preferencesManager.themeModeFlow.first()
-
-                    val backupData = """
-                        Backup Date: ${java.util.Date()}
-                        User: $userName ($userEmail)
-                        Theme: $theme
-                        Dark Mode: ${binding.switchDarkMode.isChecked}
-                        Sound: ${binding.switchSound.isChecked}
-                    """.trimIndent()
-
+                viewModel.createBackupData { backupData ->
                     outputStream.write(backupData.toByteArray())
-                    showToast("Бэкап успешно создан")
                 }
             }
         } catch (e: Exception) {
@@ -199,10 +213,7 @@ class SettingsFragment : Fragment() {
                         content.append(line).append("\n")
                         line = reader.readLine()
                     }
-                    // В лабораторной нужно просто восстановить или показать данные.
-                    // Мы покажем содержимое в Toast или Dialog.
-                    // В реальной жизни тут был бы парсинг.
-                    showToast("Файл прочитан:\n$content")
+                    viewModel.processRestoreData(content.toString())
                 }
             }
         } catch (e: Exception) {

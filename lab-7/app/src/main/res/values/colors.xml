@@ -5,25 +5,25 @@
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#EADDFF</color>
     <color name="md_theme_onPrimaryContainer">#21005D</color>
-    
+
     <!-- Secondary colors - Teal for balance -->
-    <color name="md_theme_secondary">#625B71</color>
+    <color name="md_theme_secondary">#4D635F</color>
     <color name="md_theme_onSecondary">#FFFFFF</color>
-    <color name="md_theme_secondaryContainer">#E8DEF8</color>
-    <color name="md_theme_onSecondaryContainer">#1D192B</color>
-    
+    <color name="md_theme_secondaryContainer">#CCE8DE</color>
+    <color name="md_theme_onSecondaryContainer">#06202C</color>
+
     <!-- Tertiary colors - Orange for energy -->
-    <color name="md_theme_tertiary">#7D5260</color>
+    <color name="md_theme_tertiary">#9A6200</color>
     <color name="md_theme_onTertiary">#FFFFFF</color>
-    <color name="md_theme_tertiaryContainer">#FFD8E4</color>
-    <color name="md_theme_onTertiaryContainer">#31111D</color>
-    
+    <color name="md_theme_tertiaryContainer">#FFDCC2</color>
+    <color name="md_theme_onTertiaryContainer">#2E1C00</color>
+
     <!-- Error colors -->
-    <color name="md_theme_error">#B3261E</color>
+    <color name="md_theme_error">#BA1A1A</color>
     <color name="md_theme_onError">#FFFFFF</color>
-    <color name="md_theme_errorContainer">#F9DEDC</color>
-    <color name="md_theme_onErrorContainer">#410E0B</color>
-    
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+
     <!-- Background colors -->
     <color name="md_theme_background">#FFFBFE</color>
     <color name="md_theme_onBackground">#1C1B1F</color>
@@ -31,13 +31,39 @@
     <color name="md_theme_onSurface">#1C1B1F</color>
     <color name="md_theme_surfaceVariant">#E7E0EC</color>
     <color name="md_theme_onSurfaceVariant">#49454F</color>
-    
+
     <!-- Outline -->
     <color name="md_theme_outline">#79747E</color>
     <color name="md_theme_outlineVariant">#CAC4D0</color>
-    
-    <!-- Success color -->
+
+    <!-- Success, warning, error for status -->
     <color name="success_green">#4CAF50</color>
     <color name="warning_orange">#FF9800</color>
     <color name="error_red">#F44336</color>
+
+    <!-- Material 3 aliases for easier reference -->
+    <color name="colorPrimary">@color/md_theme_primary</color>
+    <color name="colorOnPrimary">@color/md_theme_onPrimary</color>
+    <color name="colorPrimaryContainer">@color/md_theme_primaryContainer</color>
+    <color name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</color>
+
+    <color name="colorSecondary">@color/md_theme_secondary</color>
+    <color name="colorOnSecondary">@color/md_theme_onSecondary</color>
+    <color name="colorSecondaryContainer">@color/md_theme_secondaryContainer</color>
+    <color name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</color>
+
+    <color name="colorTertiary">@color/md_theme_tertiary</color>
+    <color name="colorOnTertiary">@color/md_theme_onTertiary</color>
+    <color name="colorTertiaryContainer">@color/md_theme_tertiaryContainer</color>
+    <color name="colorOnTertiaryContainer">@color/md_theme_onTertiaryContainer</color>
+
+    <color name="colorError">@color/md_theme_error</color>
+    <color name="colorOnError">@color/md_theme_onError</color>
+    <color name="colorErrorContainer">@color/md_theme_errorContainer</color>
+    <color name="colorOnErrorContainer">@color/md_theme_onErrorContainer</color>
+
+    <color name="colorSurface">@color/md_theme_surface</color>
+    <color name="colorOnSurface">@color/md_theme_onSurface</color>
+    <color name="colorSurfaceVariant">@color/md_theme_surfaceVariant</color>
+    <color name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</color>
 </resources>

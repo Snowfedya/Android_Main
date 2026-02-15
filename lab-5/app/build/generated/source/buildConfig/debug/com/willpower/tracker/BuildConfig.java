@@ -12,5 +12,5 @@ public final class BuildConfig {
   // Field from default config.
   public static final String API_BASE_URL = "https://open.bigmodel.cn/api/paas/v4/";
   // Field from default config.
-  public static final String API_KEY = "";
+  public static final String API_KEY = "51f7eb3de3cc417fbe635694e05402d1.BMvzhYn36sygKdP8";
 }

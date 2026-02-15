@@ -89,7 +89,8 @@ class HomeFragment : Fragment() {
 
     private fun setupClickListeners() {
         binding.fabAdd.setOnClickListener {
-            Toast.makeText(requireContext(), "Добавить новый челлендж", Toast.LENGTH_SHORT).show()
+            val action = HomeFragmentDirections.actionHomeToAddEdit(challengeId = -1)
+            findNavController().navigate(action)
         }
 
         binding.btnSettings.setOnClickListener {
@@ -98,6 +99,10 @@ class HomeFragment : Fragment() {
 
         binding.btnReports.setOnClickListener {
             findNavController().navigate(R.id.action_home_to_reports)
+        }
+        
+        binding.btnAiAnalysis.setOnClickListener {
+            viewModel.analyzeTasks()
         }
 
         // Swipe to refresh
@@ -124,6 +129,16 @@ class HomeFragment : Fragment() {
                     viewModel.latestAdvice.collect { advice ->
                         Log.d(TAG, "Advice updated: ${advice?.text?.take(50)}...")
                         updateAdviceDisplay(advice)
+                    }
+                }
+                
+                // Collect analysis result
+                launch {
+                    viewModel.analysisResult.collect { result ->
+                        result?.let {
+                            showAnalysisDialog(it)
+                            viewModel.clearAnalysis()
+                        }
                     }
                 }
 
@@ -171,6 +186,14 @@ class HomeFragment : Fragment() {
             "Потяните вниз, чтобы получить совет"
         }
         binding.tvAdviceText.text = adviceText
+    }
+    
+    private fun showAnalysisDialog(analysis: String) {
+        androidx.appcompat.app.AlertDialog.Builder(requireContext())
+            .setTitle("Анализ задач от AI")
+            .setMessage(analysis)
+            .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+            .show()
     }
 
     private fun showError(message: String) {

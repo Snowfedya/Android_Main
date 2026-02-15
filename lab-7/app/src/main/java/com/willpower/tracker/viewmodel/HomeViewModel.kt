@@ -50,6 +50,31 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    private val _analysisResult = MutableStateFlow<String?>(null)
+    val analysisResult: StateFlow<String?> = _analysisResult.asStateFlow()
+
+    fun analyzeTasks() {
+        viewModelScope.launch {
+            _isLoading.value = true
+            val tasksList = repository.getAllTasks().first() // Get current snapshot
+            val taskTitles = tasksList.joinToString(", ") { it.title }
+            val prompt = "Analyze my current tasks: $taskTitles. Give me a short summary and advice in Russian."
+            
+            repository.getAiAnalysis(prompt)
+                .onSuccess { result ->
+                    _analysisResult.value = result
+                }
+                .onFailure { e ->
+                    _errorMessage.value = "Ошибка анализа: ${e.message}"
+                }
+            _isLoading.value = false
+        }
+    }
+
+    fun clearAnalysis() {
+        _analysisResult.value = null
+    }
+
     /**
      * Clear error message after displaying to user
      */

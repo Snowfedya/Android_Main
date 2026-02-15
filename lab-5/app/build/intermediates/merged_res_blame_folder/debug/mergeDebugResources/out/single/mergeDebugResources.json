@@ -1,78 +1,82 @@
 [
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_item_challenge.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/item_challenge.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/drawable_bg_card.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/drawable/bg_card.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_details.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/fragment_details.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/navigation_nav_graph.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/drawable/ic_launcher_background.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_activity_sign_up.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/activity_sign_up.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_onboard.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/fragment_onboard.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/drawable_bg_card.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/drawable/bg_card.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_activity_sign_in.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/activity_sign_in.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/drawable_bg_gradient.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/drawable/bg_gradient.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_fragment_details.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/fragment_details.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_sign_in.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/fragment_sign_in.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/drawable_bg_gradient.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/drawable/bg_gradient.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_home.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/fragment_home.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_activity_main.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/activity_main.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_activity_onboard.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/activity_onboard.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_fragment_sign_in.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/fragment_sign_in.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_fragment_home.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_activity_sign_in.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/activity_sign_in.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_activity_onboard.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/activity_onboard.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/drawable_ic_willpower.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/drawable/ic_willpower.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_item_challenge.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/item_challenge.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_fragment_sign_up.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/fragment_sign_up.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_fragment_onboard.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/fragment_onboard.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_fragment_sign_up.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/fragment_sign_up.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/navigation_nav_graph.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/navigation/nav_graph.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_activity_home.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/activity_home.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_activity_main.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/activity_main.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_item_character.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/item_character.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.willpower.tracker.app-debug-49:/layout_activity_home.xml.flat",
-        "source": "com.willpower.tracker.app-main-51:/layout/activity_home.xml"
+        "merged": "com.willpower.tracker.app-debug-50:/layout_activity_sign_up.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.willpower.tracker.app-debug-50:/drawable_ic_willpower.xml.flat",
+        "source": "com.willpower.tracker.app-main-52:/drawable/ic_willpower.xml"
     }
 ]

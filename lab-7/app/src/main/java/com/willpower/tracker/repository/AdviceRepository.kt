@@ -32,4 +32,20 @@ class AdviceRepository(private val context: Context) {
     } catch (e: Exception) {
         Result.failure(e)
     }
+
+    suspend fun getAnalysis(prompt: String): Result<String> = try {
+        val request = ChatRequest(
+            messages = listOf(ChatMessage(role = "user", content = prompt))
+        )
+        val response = apiService.getAdvice(request)
+        if (response.isSuccessful && response.body() != null) {
+            val text = response.body()!!.choices.firstOrNull()?.message?.content
+                ?: "Анализ недоступен"
+            Result.success(text)
+        } else {
+            Result.failure(Exception("API Error: ${response.code()}"))
+        }
+    } catch (e: Exception) {
+        Result.failure(e)
+    }
 }

@@ -9,9 +9,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.willpower.tracker.adapters.CharacterAdapter
+import com.willpower.tracker.R
+import com.willpower.tracker.adapters.ChallengeAdapter
 import com.willpower.tracker.databinding.FragmentHomeBinding
-import com.willpower.tracker.repository.CharacterRepository
+import com.willpower.tracker.models.Challenge
+import com.willpower.tracker.repository.AdviceRepository
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -19,8 +21,8 @@ class HomeFragment : Fragment() {
     private val TAG = "HomeFragment"
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var adapter: CharacterAdapter
-    private val repository = CharacterRepository()
+    private lateinit var adapter: ChallengeAdapter
+    private val adviceRepository = AdviceRepository()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,30 +38,41 @@ class HomeFragment : Fragment() {
 
         setupRecyclerView()
         loadData()
+        loadAdvice()
     }
 
     private fun setupRecyclerView() {
-        adapter = CharacterAdapter()
+        adapter = ChallengeAdapter(Challenge.getSampleChallenges())
         binding.rvChallenges.layoutManager = LinearLayoutManager(requireContext())
         binding.rvChallenges.adapter = adapter
     }
 
     private fun loadData() {
+        // Lab 5 focused on networking, but we keep local challenges display
+        binding.tvChallengesTitle.text = getString(R.string.challenges_title, Challenge.getSampleChallenges().size)
+    }
+
+    private fun loadAdvice() {
         viewLifecycleOwner.lifecycleScope.launch {
             try {
-                // Загружаем 3 страницы, чтобы получить >50 персонажей (20 * 3 = 60)
-                val page1 = repository.getCharacters(1)
-                val page2 = repository.getCharacters(2)
-                val page3 = repository.getCharacters(3)
+                binding.tvQuote.text = "Загрузка совета..."
+                binding.tvQuoteAuthor.visibility = View.GONE
                 
-                val allCharacters = page1 + page2 + page3
-                adapter.updateData(allCharacters)
-                
-                binding.tvChallengesTitle.text = "Персонажи (${allCharacters.size})"
-                
+                val result = adviceRepository.getRandomAdvice()
+                result.fold(
+                    onSuccess = { advice ->
+                        binding.tvQuote.text = advice.text
+                        binding.tvQuoteAuthor.text = "— WillPower AI"
+                        binding.tvQuoteAuthor.visibility = View.VISIBLE
+                    },
+                    onFailure = { e ->
+                        Log.e(TAG, "Error loading advice", e)
+                        binding.tvQuote.text = "Сделай 2 минуты прямо сейчас!"
+                    }
+                )
             } catch (e: Exception) {
-                Log.e(TAG, "Error loading data", e)
-                Toast.makeText(requireContext(), "Ошибка загрузки: ${e.message}", Toast.LENGTH_LONG).show()
+                Log.e(TAG, "Error loading advice", e)
+                binding.tvQuote.text = "Сделай 2 минуты прямо сейчас!"
             }
         }
     }

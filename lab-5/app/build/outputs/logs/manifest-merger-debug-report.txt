@@ -15,6 +15,8 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.7.6] /home/snow/.gradle/cac
 MERGED from [androidx.navigation:navigation-ui:2.7.6] /home/snow/.gradle/caches/8.9/transforms/eebcb6537eabd5f01fd728e333ae3ec0/transformed/navigation-ui-2.7.6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/0161e09123b0a246fd6a82baab62e014/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/55d40eabefbf73f82944f647ee447a0c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [io.coil-kt:coil:2.5.0] /home/snow/.gradle/caches/8.9/transforms/a3cd8ce23dca8d47bbf039a2485ecf90/transformed/coil-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/snow/.gradle/caches/8.9/transforms/8c78bb5725a55e6de3d61bf48de8f95e/transformed/coil-base-2.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/8b8a5747762b1572eda8afd9387a9e54/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/8.9/transforms/9e1c0a2257fe29f0cf590270f0880a84/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/snow/.gradle/caches/8.9/transforms/69d11edbece6f259545f23db60447e05/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
@@ -57,9 +59,10 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/snow/.gradle/cach
 MERGED from [androidx.cardview:cardview:1.0.0] /home/snow/.gradle/caches/8.9/transforms/a194e4924d989dfb0080f4753362a081/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/8.9/transforms/eba8bf210c3ffc795813e1642cb074a7/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fc048beeaff446457e070eb1f4dbeeac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/f85769b466f9c01e975cf213fe327e53/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/snow/.gradle/caches/8.9/transforms/e9068cf1ca16d88661c38e9b50684d89/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/d7f7ff5555a9e3b9e28bb4105df7a2b2/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/8.9/transforms/15db26317a4c47e1fde45708c26569b0/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/snow/.gradle/caches/8.9/transforms/0e4d7524287abf54ecb4090fdfbce1ca/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -99,8 +102,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/cach
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/caches/8.9/transforms/f18d8e940f8c4c61ef9e4075a4f8b950/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fc048beeaff446457e070eb1f4dbeeac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fc048beeaff446457e070eb1f4dbeeac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
@@ -122,7 +125,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8
 	android:theme
 		ADDED from /home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:14:9-54
 	android:usesCleartextTraffic
-		ADDED from /home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:15:9-45
+		ADDED from /home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:15:9-44
 activity#com.willpower.tracker.MainActivity
 ADDED from /home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:exported
@@ -167,6 +170,10 @@ MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/cac
 MERGED from [com.google.android.material:material:1.11.0] /home/snow/.gradle/caches/8.9/transforms/0161e09123b0a246fd6a82baab62e014/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/55d40eabefbf73f82944f647ee447a0c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/snow/.gradle/caches/8.9/transforms/55d40eabefbf73f82944f647ee447a0c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:2.5.0] /home/snow/.gradle/caches/8.9/transforms/a3cd8ce23dca8d47bbf039a2485ecf90/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.5.0] /home/snow/.gradle/caches/8.9/transforms/a3cd8ce23dca8d47bbf039a2485ecf90/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/snow/.gradle/caches/8.9/transforms/8c78bb5725a55e6de3d61bf48de8f95e/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /home/snow/.gradle/caches/8.9/transforms/8c78bb5725a55e6de3d61bf48de8f95e/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/8b8a5747762b1572eda8afd9387a9e54/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/snow/.gradle/caches/8.9/transforms/8b8a5747762b1572eda8afd9387a9e54/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /home/snow/.gradle/caches/8.9/transforms/9e1c0a2257fe29f0cf590270f0880a84/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
@@ -251,12 +258,14 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/snow/.gradle/caches/8.9/transforms/eba8bf210c3ffc795813e1642cb074a7/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fc048beeaff446457e070eb1f4dbeeac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/snow/.gradle/caches/8.9/transforms/fc048beeaff446457e070eb1f4dbeeac/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/f85769b466f9c01e975cf213fe327e53/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/snow/.gradle/caches/8.9/transforms/f85769b466f9c01e975cf213fe327e53/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/snow/.gradle/caches/8.9/transforms/e9068cf1ca16d88661c38e9b50684d89/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/snow/.gradle/caches/8.9/transforms/e9068cf1ca16d88661c38e9b50684d89/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/d7f7ff5555a9e3b9e28bb4105df7a2b2/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/snow/.gradle/caches/8.9/transforms/d7f7ff5555a9e3b9e28bb4105df7a2b2/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/snow/.gradle/caches/8.9/transforms/15db26317a4c47e1fde45708c26569b0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
@@ -273,8 +282,8 @@ provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] /home/snow/.gradle/caches/8.9/transforms/fbf4eb3326413ab3575f631db0de4e08/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/caches/8.9/transforms/f18d8e940f8c4c61ef9e4075a4f8b950/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/caches/8.9/transforms/f18d8e940f8c4c61ef9e4075a4f8b950/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/snow/.gradle/caches/8.9/transforms/13e228f0ac60b547521f7e68a05c54fd/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
@@ -330,44 +339,44 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/cache
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/caches/8.9/transforms/f18d8e940f8c4c61ef9e4075a4f8b950/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

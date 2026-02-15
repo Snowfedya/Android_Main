@@ -41,7 +41,7 @@ Navigate to any lab directory (`lab-1/`, `lab-2/`, etc.) to run these commands:
 > **Note:** Each lab is a standalone project. Commands are executed within the specific lab directory. See [LABS.md](LABS.md) for lab-specific functionality and requirements.
 
 **Build Configuration (base):**
-- **Language:** Kotlin 2.2.10
+- **Language:** Kotlin 1.8 compatibility (jvmTarget = "1.8")
 - **Compile SDK:** 34
 - **Min SDK:** 24
 - **Namespace:** `com.willpower.tracker`
@@ -75,7 +75,7 @@ python .agent/skills/mobile-design/scripts/mobile_audit.py <project_path>
 | Lab | Focus | Key Additions | Architecture |
 |-----|-------|---------------|--------------|
 | **1** | UI (Activities) | 4 Activities, RecyclerView, basic navigation | Activity-based |
-| **2** | Lifecycle | BaseActivity, lifecycle logging, Intent/Parcelable | Activity-based + lifecycle |
+| **2** | Lifecycle + Data Transfer | BaseActivity, lifecycle logging, Intent/Parcelable | Activity-based + lifecycle |
 | **3** | Fragments | Single Activity, 4 Fragments, FragmentManager | Fragment-based |
 | **4** | Navigation + ViewBinding | NavController, Safe Args, DetailsFragment | Fragment + Navigation Component |
 | **5** | Networking | Retrofit, AI API (glm-4.7-flash), error handling | Fragment + Network |
@@ -143,7 +143,7 @@ User Request → Agent Selection → Skill Loading → Execution
 
 **Agent Selection Protocol:**
 
-1. Classify request type (QUESTION, SIMPLE CODE, COMPLEX CODE, DESIGN/UI, SLASH CMD)
+1. Classify request type (QUESTION, SURVEY/INTEL, SIMPLE CODE, COMPLEX CODE, DESIGN/UI, SLASH CMD)
 2. Select appropriate specialist agent
 3. Load required skills from agent's frontmatter
 4. Apply agent-specific rules and protocols
@@ -195,3 +195,69 @@ User Request → Agent Selection → Skill Loading → Execution
 - junit:junit:4.13.2
 - androidx.test.ext:junit:1.1.5
 - androidx.test.espresso:espresso-core:3.5.1
+
+**Lab-Specific Dependencies (added progressively):**
+- Lab 4: Navigation Component, Safe Args, ViewBinding
+- Lab 5: Retrofit, OkHttp, Kotlin Serialization, Coil (image loading)
+- Lab 6: DataStore Preferences
+- Lab 7: Room (runtime, ktx, compiler with KSP), Paging, Lifecycle components
+
+---
+
+## Project-Specific Notes
+
+**Application IDs by Lab:**
+- Lab 1: `com.willpower.tracker.lab1`
+- Lab 2: `com.willpower.tracker.lab2`
+- Lab 3: `com.willpower.tracker.lab3`
+- Lab 4: `com.willpower.tracker.lab4`
+- Lab 5: `com.willpower.tracker.lab5`
+- Lab 6: `com.willpower.tracker.lab6`
+- Lab 7: `com.willpower.tracker.lab7`
+
+**API Configuration (Labs 5-7):**
+- Base URL: `https://open.bigmodel.cn/api/paas/v4/`
+- Model: `glm-4.7-flash`
+- API key is injected via BuildConfig (requires `API_KEY` property in gradle.properties)
+
+**Language Note:** The project UI and documentation (LABS.md) is in Russian, but code comments, variable names, and technical documentation should remain in English.
+
+---
+
+## Common Issues and Solutions
+
+**Build Errors:**
+- Java version mismatch: Use Java 17 for Android Gradle Plugin 8.x
+- Kotlin serialization errors: Ensure `@Serializable` annotation and proper plugin setup
+- Room schema issues: Delete and regenerate schemas in `app/schemas/`
+
+**Runtime Issues:**
+- Network on main thread: Use Retrofit coroutines or proper background execution
+- Missing ViewBinding: Enable `viewBinding = true` in buildFeatures
+- Navigation crashes: Verify Safe Args configuration and fragment destinations
+
+---
+
+## Quick Reference for Common Tasks
+
+**Adding a new screen:**
+1. Create Fragment/Activity class
+2. Create layout XML in `res/layout/`
+3. Add to navigation graph (Labs 4-7)
+4. Update dependencies/actions
+
+**Modifying data models:**
+1. Update model class (e.g., `Challenge.kt`)
+2. Update adapter if UI changes
+3. Update DAO/Repository if database/network layer (Labs 5-7)
+4. Run tests to verify compatibility
+
+**Adding network API calls:**
+1. Define data models with `@Serializable`
+2. Create ApiService interface with Retrofit annotations
+3. Implement Repository pattern for data fetching
+4. Handle errors with try-catch and fallback UI
+
+---
+
+For more details on specific labs, always refer to [LABS.md](LABS.md). For agent system details, see `.agent/ARCHITECTURE.md`.

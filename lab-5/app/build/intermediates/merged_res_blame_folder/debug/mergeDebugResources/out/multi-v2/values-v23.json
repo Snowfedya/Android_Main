@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.willpower.tracker.app-mergeDebugResources-47:/values-v23/values-v23.xml",
+            "outputFile": "com.willpower.tracker.app-mergeDebugResources-48:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/home/snow/.gradle/caches/8.9/transforms/a194e4924d989dfb0080f4753362a081/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",

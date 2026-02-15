@@ -58,6 +58,7 @@ id etName
 id etPassword
 id fabAdd
 id homeFragment
+id ivAvatar
 id ivLogo
 id navHostFragment
 id nav_graph
@@ -76,8 +77,10 @@ id tvCategory
 id tvChallengesTitle
 id tvDescription
 id tvDuration
+id tvName
 id tvQuote
 id tvQuoteAuthor
+id tvStatus
 id tvStreak
 id tvSubtitle
 id tvTechnique
@@ -94,6 +97,7 @@ layout fragment_onboard
 layout fragment_sign_in
 layout fragment_sign_up
 layout item_challenge
+layout item_character
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -104,6 +108,7 @@ string btn_get_started
 string btn_register
 string btn_sign_in
 string btn_sign_up
+string challenges_title
 string confirm_password_hint
 string daily_quote
 string email_hint

@@ -1,6 +1,5 @@
 package com.willpower.tracker.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,53 +8,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.willpower.tracker.R
-import com.willpower.tracker.models.User
 
 class SignInFragment : Fragment() {
 
     private val TAG = "SignInFragment"
-
-    companion object {
-        private const val ARG_USER = "arg_user"
-
-        fun newInstance(user: User? = null): SignInFragment {
-            return SignInFragment().apply {
-                arguments = Bundle().apply {
-                    putParcelable(ARG_USER, user)
-                }
-            }
-        }
-    }
-
-    interface SignInListener {
-        fun onSignInSuccess()
-        fun onSignUpClicked()
-    }
-
-    private var listener: SignInListener? = null
-    private var registeredUser: User? = null
 
     private lateinit var tilEmail: TextInputLayout
     private lateinit var tilPassword: TextInputLayout
     private lateinit var etEmail: TextInputEditText
     private lateinit var etPassword: TextInputEditText
     private lateinit var tvWelcome: TextView
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        Log.d(TAG, "onAttach() called")
-        listener = context as? SignInListener
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate() called")
-        @Suppress("DEPRECATION")
-        registeredUser = arguments?.getParcelable(ARG_USER)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -72,7 +38,6 @@ class SignInFragment : Fragment() {
 
         initViews(view)
         setupClickListeners(view)
-        displayUserData()
     }
 
     private fun initViews(view: View) {
@@ -86,20 +51,12 @@ class SignInFragment : Fragment() {
     private fun setupClickListeners(view: View) {
         view.findViewById<Button>(R.id.btnSignIn).setOnClickListener {
             if (validateInput()) {
-                listener?.onSignInSuccess()
+                findNavController().navigate(R.id.action_signIn_to_home)
             }
         }
 
         view.findViewById<Button>(R.id.btnGoToSignUp).setOnClickListener {
-            listener?.onSignUpClicked()
-        }
-    }
-
-    private fun displayUserData() {
-        registeredUser?.let { user ->
-            tvWelcome.text = "Добро пожаловать, ${user.name}!\nEmail: ${user.email}"
-            tvWelcome.visibility = View.VISIBLE
-            etEmail.setText(user.email)
+            findNavController().navigate(R.id.action_signIn_to_signUp)
         }
     }
 
@@ -145,11 +102,5 @@ class SignInFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView() called")
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Log.d(TAG, "onDetach() called")
-        listener = null
     }
 }

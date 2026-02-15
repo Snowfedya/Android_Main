@@ -70,6 +70,13 @@ class DetailsFragment : Fragment() {
     }
 
     private fun setupClickListeners() {
+        binding.fabEdit.setOnClickListener {
+            viewModel.task.value?.let { task ->
+                val action = DetailsFragmentDirections.actionDetailsToAddEdit(challengeId = task.id)
+                findNavController().navigate(action)
+            }
+        }
+
         binding.btnStartFocusMode.setOnClickListener {
             viewModel.task.value?.let { task ->
                 startTimer(task.recommendedDurationMin)

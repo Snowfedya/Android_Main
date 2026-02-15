@@ -34,6 +34,7 @@
     <string name="btn_register">Зарегистрироваться</string>
     <string name="btn_sign_in">Войти</string>
     <string name="btn_sign_up">Регистрация</string>
+    <string name="challenges_title">Челленджи (%d)</string>
     <string name="confirm_password_hint">Подтвердите пароль</string>
     <string name="daily_quote">Цитата дня</string>
     <string name="email_hint">Email</string>

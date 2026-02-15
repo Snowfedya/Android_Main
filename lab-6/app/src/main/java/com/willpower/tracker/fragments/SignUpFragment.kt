@@ -1,6 +1,5 @@
 package com.willpower.tracker.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +10,7 @@ import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.willpower.tracker.R
@@ -19,13 +19,6 @@ import com.willpower.tracker.models.User
 class SignUpFragment : Fragment() {
 
     private val TAG = "SignUpFragment"
-
-    interface SignUpListener {
-        fun onSignUpSuccess(user: User)
-        fun onBackToSignIn()
-    }
-
-    private var listener: SignUpListener? = null
 
     private lateinit var tilName: TextInputLayout
     private lateinit var tilEmail: TextInputLayout
@@ -39,17 +32,6 @@ class SignUpFragment : Fragment() {
     private lateinit var etConfirmPassword: TextInputEditText
     private lateinit var etAge: TextInputEditText
     private lateinit var actvGender: AutoCompleteTextView
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        Log.d(TAG, "onAttach() called")
-        listener = context as? SignUpListener
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate() called")
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -66,7 +48,7 @@ class SignUpFragment : Fragment() {
 
         initViews(view)
         setupGenderDropdown()
-        setupClickListeners(view)
+        setupClickListeners()
     }
 
     private fun initViews(view: View) {
@@ -94,23 +76,16 @@ class SignUpFragment : Fragment() {
         actvGender.setAdapter(adapter)
     }
 
-    private fun setupClickListeners(view: View) {
-        view.findViewById<Button>(R.id.btnRegister).setOnClickListener {
+    private fun setupClickListeners() {
+        view?.findViewById<Button>(R.id.btnRegister)?.setOnClickListener {
             if (validateInput()) {
-                val user = User(
-                    name = etName.text.toString().trim(),
-                    email = etEmail.text.toString().trim(),
-                    password = etPassword.text.toString().trim(),
-                    age = etAge.text.toString().trim().toIntOrNull() ?: 0,
-                    gender = actvGender.text.toString().trim()
-                )
                 Toast.makeText(requireContext(), "Регистрация успешна!", Toast.LENGTH_SHORT).show()
-                listener?.onSignUpSuccess(user)
+                findNavController().popBackStack()
             }
         }
 
-        view.findViewById<Button>(R.id.btnGoToSignIn).setOnClickListener {
-            listener?.onBackToSignIn()
+        view?.findViewById<Button>(R.id.btnGoToSignIn)?.setOnClickListener {
+            findNavController().popBackStack()
         }
     }
 
@@ -173,11 +148,5 @@ class SignUpFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView() called")
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Log.d(TAG, "onDetach() called")
-        listener = null
     }
 }

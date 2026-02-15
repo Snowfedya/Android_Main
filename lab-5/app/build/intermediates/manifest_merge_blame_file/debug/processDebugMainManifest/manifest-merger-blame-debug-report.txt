@@ -44,8 +44,8 @@
 28-->/home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:13:9-35
 29        android:theme="@style/Theme.WillPowerTracker"
 29-->/home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:14:9-54
-30        android:usesCleartextTraffic="false" >
-30-->/home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:15:9-45
+30        android:usesCleartextTraffic="true" >
+30-->/home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:15:9-44
 31        <activity
 31-->/home/snow/Projects/Android_Main/lab-5/app/src/main/AndroidManifest.xml:18:9-26:20
 32            android:name="com.willpower.tracker.MainActivity"
@@ -87,11 +87,11 @@
 51                android:value="androidx.startup" />
 51-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/snow/.gradle/caches/8.9/transforms/f18d8e940f8c4c61ef9e4075a4f8b950/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
 52            <meta-data
-52-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+52-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
 53                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-53-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+53-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
 54                android:value="androidx.startup" />
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+54-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
 55        </provider>
 56
 57        <uses-library
@@ -108,40 +108,40 @@
 62-->[androidx.window:window:1.0.0] /home/snow/.gradle/caches/8.9/transforms/41a0fa34864fe6644d934bb6c60c56eb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
 63
 64        <receiver
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
 65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 66            android:directBootAware="false"
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
 67            android:enabled="true"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
 68            android:exported="true"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
 69            android:permission="android.permission.DUMP" >
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
 70            <intent-filter>
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 72            </intent-filter>
 73            <intent-filter>
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 75            </intent-filter>
 76            <intent-filter>
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 78            </intent-filter>
 79            <intent-filter>
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/snow/.gradle/caches/8.9/transforms/eff8e63621fdc2b3ab8fdf72c75a772e/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/snow/.gradle/caches/8.9/transforms/0c8d47c2e4787e4639387de3a9cc759e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
 81            </intent-filter>
 82        </receiver>
 83    </application>

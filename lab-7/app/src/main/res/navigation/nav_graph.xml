@@ -90,6 +90,13 @@
             app:exitAnim="@anim/fragment_fade_exit"
             app:popEnterAnim="@anim/fragment_fade_enter"
             app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_home_to_addEdit"
+            app:destination="@id/addEditChallengeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
     </fragment>
 
     <fragment
@@ -106,6 +113,13 @@
         <action
             android:id="@+id/action_details_to_focusMode"
             app:destination="@id/focusModeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_details_to_addEdit"
+            app:destination="@id/addEditChallengeFragment"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
             app:popEnterAnim="@anim/fragment_fade_enter"
@@ -136,5 +150,16 @@
         android:name="com.willpower.tracker.fragments.ReportsFragment"
         android:label="Reports"
         tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/addEditChallengeFragment"
+        android:name="com.willpower.tracker.fragments.AddEditChallengeFragment"
+        android:label="Add/Edit Challenge"
+        tools:layout="@layout/fragment_add_edit_challenge">
+        <argument
+            android:name="challengeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
 
 </navigation>

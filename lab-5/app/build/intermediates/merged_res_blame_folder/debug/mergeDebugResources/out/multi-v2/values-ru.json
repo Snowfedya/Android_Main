@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.willpower.tracker.app-mergeDebugResources-47:/values-ru/values-ru.xml",
+            "outputFile": "com.willpower.tracker.app-mergeDebugResources-48:/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "/home/snow/.gradle/caches/8.9/transforms/bf7c7fbc5b3b789d1b87f712885fa60d/transformed/core-1.12.0/res/values-ru/values-ru.xml",

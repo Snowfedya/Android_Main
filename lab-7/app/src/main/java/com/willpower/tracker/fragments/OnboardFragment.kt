@@ -8,22 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.willpower.tracker.R
 
 class OnboardFragment : Fragment() {
 
     private val TAG = "OnboardFragment"
 
-    interface OnboardListener {
-        fun onGetStartedClicked()
-    }
-
-    private var listener: OnboardListener? = null
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         Log.d(TAG, "onAttach() called")
-        listener = context as? OnboardListener
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,7 +40,7 @@ class OnboardFragment : Fragment() {
 
         val btnGetStarted = view.findViewById<Button>(R.id.btnGetStarted)
         btnGetStarted.setOnClickListener {
-            listener?.onGetStartedClicked()
+            findNavController().navigate(R.id.action_onboard_to_signIn)
         }
     }
 
@@ -83,6 +77,5 @@ class OnboardFragment : Fragment() {
     override fun onDetach() {
         super.onDetach()
         Log.d(TAG, "onDetach() called")
-        listener = null
     }
 }

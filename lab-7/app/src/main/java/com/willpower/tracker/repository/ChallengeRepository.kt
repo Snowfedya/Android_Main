@@ -61,5 +61,9 @@ class ChallengeRepository(context: Context) {
         )
     }
 
+    suspend fun getAiAnalysis(prompt: String): Result<String> {
+        return adviceRepo.getAnalysis(prompt)
+    }
+
     suspend fun getTaskById(taskId: Int): TaskEntity? = taskDao.getTaskById(taskId)
 }

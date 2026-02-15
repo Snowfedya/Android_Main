@@ -81,6 +81,22 @@
         <argument
             android:name="challengeTitle"
             app:argType="string" />
+        <action
+            android:id="@+id/action_details_to_focusMode"
+            app:destination="@id/focusModeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/focusModeFragment"
+        android:name="com.willpower.tracker.fragments.FocusModeFragment"
+        android:label="Focus Mode"
+        tools:layout="@layout/fragment_focus_mode">
+        <argument
+            android:name="challengeId"
+            app:argType="integer" />
+        <argument
+            android:name="durationMinutes"
+            app:argType="integer" />
     </fragment>
 
     <fragment

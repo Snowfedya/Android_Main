@@ -9,6 +9,7 @@ import com.willpower.tracker.repository.ChallengeRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 /**
@@ -56,17 +57,21 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     fun analyzeTasks() {
         viewModelScope.launch {
             _isLoading.value = true
-            val tasksList = repository.getAllTasks().first() // Get current snapshot
-            val taskTitles = tasksList.joinToString(", ") { it.title }
-            val prompt = "Analyze my current tasks: $taskTitles. Give me a short summary and advice in Russian."
-            
-            repository.getAiAnalysis(prompt)
-                .onSuccess { result ->
-                    _analysisResult.value = result
-                }
-                .onFailure { e ->
-                    _errorMessage.value = "Ошибка анализа: ${e.message}"
-                }
+            try {
+                val tasksList = tasks.first() // Get current snapshot from the Flow
+                val taskTitles = tasksList.joinToString(", ") { it.title }
+                val prompt = "Analyze my current tasks: $taskTitles. Give me a short summary and advice in Russian."
+                
+                repository.getAiAnalysis(prompt)
+                    .onSuccess { result ->
+                        _analysisResult.value = result
+                    }
+                    .onFailure { e ->
+                        _errorMessage.value = "Ошибка анализа: ${e.message}"
+                    }
+            } catch (e: Exception) {
+                _errorMessage.value = "Ошибка: ${e.message}"
+            }
             _isLoading.value = false
         }
     }

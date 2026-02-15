@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
 
 /**
@@ -21,7 +22,11 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = ChallengeRepository(application)
 
     // Flow-based reactive data from Room database
-    val tasks: kotlinx.coroutines.flow.Flow<List<TaskEntity>> = repository.getAllTasks()
+    val tasksFlow: kotlinx.coroutines.flow.Flow<List<TaskEntity>> = repository.getAllTasks()
+    
+    private val _tasksList = MutableStateFlow<List<TaskEntity>>(emptyList())
+    val tasks: StateFlow<List<TaskEntity>> = _tasksList.asStateFlow()
+
     val latestAdvice: kotlinx.coroutines.flow.Flow<AiAdviceEntity?> = repository.getLatestAdvice()
 
     // UI State
@@ -30,6 +35,15 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _errorMessage = MutableStateFlow<String?>(null)
     val errorMessage: StateFlow<String?> = _errorMessage.asStateFlow()
+
+    init {
+        // Collect tasks into StateFlow
+        viewModelScope.launch {
+            tasksFlow.collect {
+                _tasksList.value = it
+            }
+        }
+    }
 
     /**
      * Refresh advice from AI API
@@ -55,21 +69,34 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     val analysisResult: StateFlow<String?> = _analysisResult.asStateFlow()
 
     fun analyzeTasks() {
+        android.util.Log.d("HomeViewModel", "analyzeTasks() called")
         viewModelScope.launch {
             _isLoading.value = true
             try {
-                val tasksList = tasks.first() // Get current snapshot from the Flow
-                val taskTitles = tasksList.joinToString(", ") { it.title }
+                val currentTasks = _tasksList.value
+                android.util.Log.d("HomeViewModel", "Current tasks count: ${currentTasks.size}")
+                
+                if (currentTasks.isEmpty()) {
+                    _errorMessage.value = "Нет задач для анализа"
+                    _isLoading.value = false
+                    return@launch
+                }
+
+                val taskTitles = currentTasks.joinToString(", ") { it.title }
                 val prompt = "Analyze my current tasks: $taskTitles. Give me a short summary and advice in Russian."
+                android.util.Log.d("HomeViewModel", "Prompt: $prompt")
                 
                 repository.getAiAnalysis(prompt)
                     .onSuccess { result ->
+                        android.util.Log.d("HomeViewModel", "Analysis success")
                         _analysisResult.value = result
                     }
                     .onFailure { e ->
+                        android.util.Log.e("HomeViewModel", "Analysis failure", e)
                         _errorMessage.value = "Ошибка анализа: ${e.message}"
                     }
             } catch (e: Exception) {
+                android.util.Log.e("HomeViewModel", "Exception in analyzeTasks", e)
                 _errorMessage.value = "Ошибка: ${e.message}"
             }
             _isLoading.value = false

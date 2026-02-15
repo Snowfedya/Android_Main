@@ -102,7 +102,12 @@ class HomeFragment : Fragment() {
         }
         
         binding.btnAiAnalysis.setOnClickListener {
-            viewModel.analyzeTasks()
+            try {
+                viewModel.analyzeTasks()
+            } catch (e: Exception) {
+                Log.e(TAG, "Error triggering analysis", e)
+                showError("Ошибка: ${e.message}")
+            }
         }
 
         // Swipe to refresh
@@ -117,15 +122,15 @@ class HomeFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
 
                 // Collect tasks from Room database
-                launch {
-                    viewModel.tasks.collect { tasks ->
+                launch(kotlinx.coroutines.Dispatchers.Main) {
+                    viewModel.tasksFlow.collect { tasks ->
                         Log.d(TAG, "Tasks updated: ${tasks.size} items")
                         updateChallengesList(tasks)
                     }
                 }
 
                 // Collect latest advice from Room database
-                launch {
+                launch(kotlinx.coroutines.Dispatchers.Main) {
                     viewModel.latestAdvice.collect { advice ->
                         Log.d(TAG, "Advice updated: ${advice?.text?.take(50)}...")
                         updateAdviceDisplay(advice)
@@ -133,9 +138,10 @@ class HomeFragment : Fragment() {
                 }
                 
                 // Collect analysis result
-                launch {
+                launch(kotlinx.coroutines.Dispatchers.Main) {
                     viewModel.analysisResult.collect { result ->
                         result?.let {
+                            Log.d(TAG, "Showing analysis dialog")
                             showAnalysisDialog(it)
                             viewModel.clearAnalysis()
                         }
@@ -189,11 +195,17 @@ class HomeFragment : Fragment() {
     }
     
     private fun showAnalysisDialog(analysis: String) {
-        androidx.appcompat.app.AlertDialog.Builder(requireContext())
-            .setTitle("Анализ задач от AI")
-            .setMessage(analysis)
-            .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
-            .show()
+        if (!isAdded || isDetached) return
+        
+        try {
+            com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
+                .setTitle("Анализ задач от AI")
+                .setMessage(analysis)
+                .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+                .show()
+        } catch (e: Exception) {
+            Log.e(TAG, "Error showing analysis dialog", e)
+        }
     }
 
     private fun showError(message: String) {

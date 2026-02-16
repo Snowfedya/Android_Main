@@ -151,7 +151,10 @@ class HomeFragment : Fragment() {
                 // Collect loading state
                 launch {
                     viewModel.isLoading.collect { isLoading ->
-                        (binding.swipeRefresh as? SwipeRefreshLayout)?.isRefreshing = isLoading
+                        // FIX: Check if binding is not null before accessing (prevents crash)
+                        if (_binding != null) {
+                            binding.swipeRefresh.isRefreshing = isLoading
+                        }
                     }
                 }
 
@@ -186,6 +189,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun updateAdviceDisplay(advice: AiAdviceEntity?) {
+        // FIX: Check if binding is not null before accessing (prevents crash)
+        if (_binding == null) return
+
         val adviceText = if (advice != null) {
             advice.text
         } else {
@@ -209,6 +215,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun showError(message: String) {
+        // FIX: Check if binding is not null before accessing (prevents crash)
+        if (_binding == null) return
+
         Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG)
             .setAction("OK") {}
             .show()

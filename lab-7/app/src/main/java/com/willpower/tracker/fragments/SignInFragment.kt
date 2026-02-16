@@ -1,33 +1,30 @@
 package com.willpower.tracker.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+import androidx.navigation.fragment.navArgs
 import com.willpower.tracker.R
+import com.willpower.tracker.databinding.FragmentSignInBinding
 
+/**
+ * SignInFragment - User authentication with Navigation Component.
+ * Receives user data from SignUpFragment via Safe Args.
+ * FIXED: Added Safe Args support and ViewBinding.
+ */
 class SignInFragment : Fragment() {
 
     private val TAG = "SignInFragment"
+    private var _binding: FragmentSignInBinding? = null
+    private val binding get() = _binding!!
 
-    private lateinit var tilEmail: TextInputLayout
-    private lateinit var tilPassword: TextInputLayout
-    private lateinit var etEmail: TextInputEditText
-    private lateinit var etPassword: TextInputEditText
-    private lateinit var tvWelcome: TextView
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        Log.d(TAG, "onAttach() called")
-    }
+    // FIX: Add Safe Args to receive data from SignUpFragment
+    private val args: SignInFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,35 +35,40 @@ class SignInFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         Log.d(TAG, "onCreateView() called")
-        return inflater.inflate(R.layout.fragment_sign_in, container, false)
+        _binding = FragmentSignInBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d(TAG, "onViewCreated() called")
 
-        initViews(view)
+        // FIX: Display user data from SignUpFragment
+        displayUserData()
         setupClickListeners()
     }
 
-    private fun initViews(view: View) {
-        tilEmail = view.findViewById(R.id.tilEmail)
-        tilPassword = view.findViewById(R.id.tilPassword)
-        etEmail = view.findViewById(R.id.etEmail)
-        etPassword = view.findViewById(R.id.etPassword)
-        tvWelcome = view.findViewById(R.id.tvWelcome)
+    private fun displayUserData() {
+        // FIX: Receive data from SignUpFragment via Safe Args
+        args.userName?.let { name ->
+            args.userEmail?.let { email ->
+                binding.tvWelcome.text = "Добро пожаловать, $name!"
+                binding.tvWelcome.visibility = View.VISIBLE
+                binding.etEmail.setText(email)  // Pre-fill email from registration
+            }
+        }
     }
 
     private fun setupClickListeners() {
-        view?.findViewById<Button>(R.id.btnSignIn)?.setOnClickListener {
+        binding.btnSignIn.setOnClickListener {
             if (validateInput()) {
                 findNavController().navigate(R.id.action_signIn_to_home)
             }
         }
 
-        view?.findViewById<Button>(R.id.btnGoToSignUp)?.setOnClickListener {
+        binding.btnGoToSignUp.setOnClickListener {
             findNavController().navigate(R.id.action_signIn_to_signUp)
         }
     }
@@ -74,27 +76,27 @@ class SignInFragment : Fragment() {
     private fun validateInput(): Boolean {
         var isValid = true
 
-        val email = etEmail.text.toString().trim()
-        val password = etPassword.text.toString().trim()
+        val email = binding.etEmail.text.toString().trim()
+        val password = binding.etPassword.text.toString().trim()
 
         if (email.isEmpty()) {
-            tilEmail.error = getString(R.string.error_empty_field)
+            binding.tilEmail.error = getString(R.string.error_empty_field)
             isValid = false
         } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            tilEmail.error = getString(R.string.error_invalid_email)
+            binding.tilEmail.error = getString(R.string.error_invalid_email)
             isValid = false
         } else {
-            tilEmail.error = null
+            binding.tilEmail.error = null
         }
 
         if (password.isEmpty()) {
-            tilPassword.error = getString(R.string.error_empty_field)
+            binding.tilPassword.error = getString(R.string.error_empty_field)
             isValid = false
         } else if (password.length < 6) {
-            tilPassword.error = getString(R.string.error_password_short)
+            binding.tilPassword.error = getString(R.string.error_password_short)
             isValid = false
         } else {
-            tilPassword.error = null
+            binding.tilPassword.error = null
         }
 
         return isValid
@@ -110,18 +112,9 @@ class SignInFragment : Fragment() {
         Log.d(TAG, "onPause() called")
     }
 
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "onStop() called")
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView() called")
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Log.d(TAG, "onDetach() called")
+        _binding = null  // FIX: Prevent ViewBinding memory leak
     }
 }

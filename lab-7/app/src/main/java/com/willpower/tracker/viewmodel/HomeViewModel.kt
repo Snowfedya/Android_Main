@@ -43,6 +43,16 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
                 _tasksList.value = it
             }
         }
+
+        // FIX: Auto-load advice on cold start
+        viewModelScope.launch {
+            // Check if we have any advice in database
+            val existingAdvice = latestAdvice.firstOrNull()
+            if (existingAdvice == null) {
+                // No advice found - load from API
+                refreshAdvice()
+            }
+        }
     }
 
     /**

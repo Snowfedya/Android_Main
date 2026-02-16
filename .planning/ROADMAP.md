@@ -30,6 +30,10 @@ Goal: Create a functional Android app with 4 Activity screens and RecyclerView f
 - UI-05 (Material Design 3 styling)
 - UI-06 (Challenge item cards with proper layout)
 
+**Plans:**
+- [ ] 01-01-PLAN.md — Fix password validation (6→4 chars) and verify LABS.md requirements
+- [ ] 01-02-PLAN.md — ADB testing verification on device/emulator
+
 **Success Criteria:**
 1. 4 Activities display correctly with transitions between screens
 2. RecyclerView shows sample challenge data (from Challenge.getSampleChallenges())
@@ -192,7 +196,7 @@ Goal: Implement Room database as single source of truth, Repository pattern, Flo
 
 | Phase | Description | Status | Progress |
 |-------|-------------|--------|----------|
-| 1 | Lab 1 - User Interface (Activities) | Pending | 0% |
+| 1 | Lab 1 - User Interface (Activities) | Planned | 0% |
 | 2 | Lab 2 - Lifecycle + Data Transfer | Pending | 0% |
 | 3 | Lab 3 - Fragments | Pending | 0% |
 | 4 | Lab 4 - Navigation + ViewBinding | Pending | 0% |
